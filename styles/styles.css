@@ -1,0 +1,8 @@
+body, p, td, span, input, select, option { font-family:Arial,Helvetica,sans-serif;font-size:8pt; }
+a:hover { color:#003366; }
+
+.standard { font-family:Arial,Helvetica,sans-serif;font-size:8pt; }
+.miniLMP { font-size:7pt; }
+.miniLMPpeak { font-size:7pt; border:2px solid #990000; }
+.tblunderline td { border-bottom:1px solid #eeeeee; }
+body  { margin:0px; }

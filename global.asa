@@ -1,0 +1,38 @@
+<SCRIPT LANGUAGE=VBScript RUNAT=Server>
+Sub Application_OnStart
+
+	'externalIP = "209.213.207.17"
+	'externalIP = "63.118.48.170"
+         externalIP = "71.167.37.50"
+
+	IntranetIP = "2012dc"
+	Application("domainName") 	= "ghnet"
+	Application("domainUnit") 	= "genergy"
+	'Application("domainServer") = "peppino"
+	Application("domainServer") = "2012dc"
+	Application("BackUpServer") = "peppino"
+	
+	'coreIP = "10.0.7.149"
+         coreIP = "2012dc\max1"
+    'PID6="10.0.7.16"
+     PID6="10.0.8.66"
+	'Auxiliary Servers	
+	Application("IntranetIP") = IntranetIP
+	Application("coreIP") = coreIP
+	Application("ExtIP") = externalIP
+	Application("SQLexternalIP") = externalIP
+	
+	'Default Connection Strings
+	'Application("dbDefault") = "Provider=SQLOLEDB;Data Source="&coreIP&";User Id=genergy1;Password=g1appg1;Initial Catalog="
+	Application("dbDefault") = "Provider=SQLOLEDB;Data Source=2012dc\max1;User Id=genergy1;Password=g1appg1;Initial Catalog="
+	Application("dbIntranet") = "Provider=SQLOLEDB;Data Source=2012dc\max1;User Id=genergy1;Password=g1appg1;Initial Catalog="	
+	
+	'Portfolio Server Connection Strings
+	'Vorndado
+	Application("PID6") = "Provider=SQLOLEDB;Data Source=2012dc\max3;User Id=genergy1;Password=g1appg1;Initial Catalog="
+	'Port Authority
+	Application("PID108") = "Provider=SQLOLEDB;Data Source=2012dc\max1;User Id=genergy1;Password=g1appg1;Initial Catalog="
+	
+	Application.lock
+End Sub
+</SCRIPT>

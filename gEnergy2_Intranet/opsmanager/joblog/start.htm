@@ -1,0 +1,141 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Job Log</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="Stylesheet" href="../../styles.css" type="text/css">		
+</head>
+<script>
+function switchview(id){
+	var tag = document.getElementById(id) 
+	tag.style.display = (tag.style.display == "table-cell" ? "none" : "table-cell");
+}
+</script>
+<body bgcolor="#eeeeee" style="border-top:2px outset #ffffff;">
+<br>
+<table width="100%" border="0" cellspacing="2" cellpadding="2">
+  <tr> 
+    <td colspan="2" bgcolor="#6699cc">&nbsp;<span class="standardheader">Job Log 
+      Quick Help</span></td>
+  </tr>
+  <tr> 
+    <td colspan="2">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="9%" nowrap style="border-bottom:1px solid black;border-right:1px solid black;">&nbsp;<strong>Opening 
+      a Job </strong></td>
+    <td width="91%"><a href="#" onClick="switchview('openjob')">show/hide help</a></td>
+  </tr>
+  <tr> 
+    <td colspan="2" id="openjob" style="display:table-cell"><br> <blockquote>To open 
+        a job, enter the job number in the pink field next to the &quot;Open Job&quot; 
+        label and click the OPEN button. You can do a quick search of the job 
+        log by clicking on the &quot;Quick job search&quot; link to the right 
+        of the OPEN button. A window will open where you can type a text to 
+        search for. The window will then search the <u>job descriptions</u> for 
+        your entered text.<br>
+        <br>
+        To do a more advance search on the job log, click the &quot;Go To Advance 
+        Search&quot; link in the upper right hand corner of the job log window. 
+        From the Advance Search area, you can search for a text string in most 
+        fields of a job - project manager, customer, job description, etc. You 
+        can also limit your seach by selecting from the drop downs for Company 
+        and Job Type as well by selecting the job status and even exclude types 
+        of jobs by selecting from the Exclude drop down. Once you've made your 
+        selections. Click the SEARCH button to begin your search. Be patient. 
+        The search conducted is extensive and may take a few seconds to complete.<br>
+        <br>
+        Once completed, you will see a list of found jobs below the search area. 
+        Click on any interested job line to view the job details. At the bottom 
+        of the page, you'll also find a breakdown of the types of jobs found. 
+        The corresponding color coding found next to each job line.</blockquote>
+      <br></td>
+  </tr>
+  <tr> 
+    <td nowrap style="border-bottom:1px solid black;border-right:1px solid black;">&nbsp;<strong>Creating 
+      a Job </strong></td>
+    <td><a href="#" onClick="switchview('createjob')">show/hide help</a></td>
+  </tr>
+  <tr> 
+    <td colspan="2" id="createjob" style="display:none"><br> 
+      <blockquote> To create a new job, click the &quot;Create a New Job&quot; 
+        link at the top of the job log window. This will open a new window. You will 
+        first then select the company you wish to create the job for, then you 
+        can enter the remaining elements of your job such as Job Description, 
+        Job Type, Customer, etc. There are some small differences in the new job 
+        area when opening jobs for different companies:<br>
+        <br>
+        As of 10/26/2004:<br>
+        <br>
+        <br>
+        - When selecting a Reading &amp; Billing job for Genergy, you will have 
+        to also select the building the Reading &amp; Billing job is for. <br>
+        - Genergy Jobs - when you select a customer - the customers address information 
+        will automatically populate the address information for the job. <br>
+        - Genergy Jobs are automatically imported into the Accounting system when 
+        opened in the job log. GESCO jobs have to be made available to the Accounting 
+        system after the job is opened by selecting the &quot;Ready for Accounting 
+        Transfer&quot; flag in the edit window for a job. <br>
+        <br>
+        Save the job and it will close the window and load your new job in the 
+        main job log window. <BR>
+        <BR>
+        QUICK TIP: SHOULD SOMETHING HAPPEN AFTER YOU HIT SAVE THAT PREVENTS THE 
+        JOB LOG WINDOW FROM REFRESHING WITH YOUR NEWLY CREATED JOB, FIRST DO A 
+        SEARCH FOR YOUR JOB BEFORE ATTEMPTING TO CREATE AGAIN.</blockquote>
+      <br></td>
+  </tr>
+  <tr> 
+    <td nowrap style="border-bottom:1px solid black;border-right:1px solid black;">&nbsp;<strong>Manage 
+      Customers &amp; Contacts</strong></td>
+    <td><a href="#" onClick="switchview('managecustomers')">show/hide help</a></td>
+  </tr>
+  <tr> 
+    <td colspan="2" id="managecustomers" style="display:none"><br> <blockquote>To 
+        manage customers and contacts, click the &quot;Manage Customers and Contacts&quot; 
+        link at the top of the job window. This will open in the main job log 
+        window the Manage Customers and Contacts module. Select the company that 
+        the customer is in and the screen will reload with the list of customers 
+        entered under that company. Click on a customer line to open the customer 
+        in a new window. From here you can view or update the customer record 
+        or edit contacts under that customer. To edit the customer information, 
+        in the customer window that opens up, click the EDIT CUSTOMER button. 
+        To edit contact information, in the customer window that opens up, scroll 
+        to the contact you wish to edit and click the EDIT button located <u>under</u> 
+        the customer.<br>
+        <br>
+        To Add a new customer, click the NEW CUSTOMER button in the Manage Customers 
+        and Contacts area in the main job log window. To add contacts, click the 
+        NEW CONTACT button in the Manage Customers and Contacts area in the main 
+        job log window. New contacts may be entered for <u>existing customers 
+        only</u>.</blockquote>
+      <br></td>
+  </tr>
+  <tr> 
+    <td nowrap style="border-bottom:1px solid black;border-right:1px solid black;">&nbsp;<strong>Manage 
+      Vendors</strong></td>
+    <td><a href="#" onClick="switchview('managevendors')">show/hide help</a></td>
+  </tr>
+  <tr> 
+    <td colspan="2"  id="managevendors" style="display:none"><br><blockquote>To manage vendors, click the &quot;Manage Vendors&quot; 
+        link at the top of the job window. This will open in the main job log 
+        window the Manage Vendors module. Select the company that the vendor is 
+        in and the screen will reload with the list of vendors entered under that 
+        company. Click on a vendor line to open the vendor in a new window. From 
+        here you can view or update the vendor record.</blockquote><br></td>
+  </tr>
+  <tr> 
+    <td colspan="2">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td colspan="2">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td colspan="2">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td colspan="2">&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>

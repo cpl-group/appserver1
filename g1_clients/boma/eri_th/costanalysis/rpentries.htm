@@ -1,0 +1,126 @@
+<%@ LANGUAGE="VBSCRIPT" %>
+<html>
+<head>
+<title>Revenue Profile - Unreported Expenses / Revenue </title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+<%
+action=Request.Querystring("action")
+
+Set cnn1 = Server.CreateObject("ADODB.Connection")
+Set rst1 = Server.CreateObject("ADODB.recordset")
+cnn1.Open "driver={SQL Server};server=10.0.7.16;uid=genergy1;pwd=g1appg1;database=genergy1;"
+strsql="Select *  from tblRPentries where userid = '" & Session("login") &"'"
+
+rst1.Open strsql, cnn1, 0, 0, 1
+
+if not rst1.EOF then	
+%>
+<body bgcolor="#FFFFFF" text="#000000">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td bgcolor="#0099FF"> 
+      <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FFFFFF"><b>Unreported 
+        Expenses / Revenue for 2002</b></font></div>
+    </td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="3%">&nbsp;</td>
+    <td width="12%">&nbsp;</td>
+    <td width="14%"> 
+      <div align="center"></div>
+    </td>
+    <td width="51%">&nbsp;</td>
+    <td width="20%">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="3%">&nbsp;</td>
+    <td width="12%" bgcolor="#999999"><font face="Arial, Helvetica, sans-serif" color="#FFFFFF">Type 
+      </font></td>
+    <td width="14%" bgcolor="#999999"> 
+      <div align="center"><font color="#FFFFFF"><font face="Arial, Helvetica, sans-serif">Period</font></font></div>
+    </td>
+    <td width="51%" bgcolor="#999999"><font face="Arial, Helvetica, sans-serif" color="#FFFFFF">Description 
+      </font></td>
+    <td width="20%" bgcolor="#999999"> 
+      <div align="right"><font color="#FFFFFF"><font face="Arial, Helvetica, sans-serif">Amount</font></font></div>
+    </td>
+  </tr>
+   <%while not rst1.eof %>
+   <tr> 
+     
+    <td width="3%"><img src="images/delete.gif"><img src="images/duplicate.gif" width="22" height="19"></td>
+    <td width="12%">
+      <%if rst1("type")=0 then Response.write "Expense" else Response.write "Revenue" end if%>
+    </td>
+    <td width="14%"> 
+      <div align="center"><%=rst1("Period")%></div>
+    </td>
+    <td width="51%"><%=rst1("description")%></td>
+    <td width="20%"><%=FormatCurrency(rst1("amt"))%></td>
+  </tr>
+  <%
+  rst1.movenext
+  Wend
+  %>
+</table>
+</body>	
+<%
+else 
+rst1.close
+Set cnn1= Nothing
+%>
+<body bgcolor="#FFFFFF" text="#000000">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td bgcolor="#0099FF"> 
+      <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FFFFFF"><b>Unreported 
+        Expenses / Revenue</b></font></div>
+    </td>
+  </tr>
+  <tr> 
+    <td> 
+      <div align="left"> <i><font face="Arial, Helvetica, sans-serif"> 
+        <input type="radio" name="type" value="0" checked>
+        Expense 
+        <input type="radio" name="type" value="1">
+        Revenue </font></i></div>
+    </td>
+  </tr>
+  <tr> 
+    <td><font face="Arial, Helvetica, sans-serif"><b>Description</b></font></td>
+  </tr>
+  <tr> 
+    <td> 
+      <textarea name="description" cols="100%" rows="2" wrap="PHYSICAL"></textarea>
+    </td>
+  </tr>
+  <tr> 
+    <td> <font face="Arial, Helvetica, sans-serif"><b>Amount</b></font> $
+<input type="text" name="textfield">
+      <b><font face="Arial, Helvetica, sans-serif">Apply to 
+      <select name="period">
+        <option value="0" selected>Year</option>
+        <option value="1">Period 1</option>
+        <option value="2">Period 2</option>
+        <option value="3">Period 3</option>
+        <option value="4">Period 4</option>
+        <option value="5">Period 5</option>
+        <option value="6">Period 6</option>
+        <option value="7">Period 7</option>
+        <option value="8">Period 8</option>
+        <option value="9">Period 9</option>
+        <option value="10">Period 10</option>
+        <option value="11">Period 11</option>
+        <option value="12">Period 12</option>
+      </select>
+      <input type="submit" name="Submit" value="Save">
+      <input type="submit" name="Submit2" value="Delete">
+      </font></b></td>
+  </tr>
+</table>
+</body>
+<% end if%>
+</html>

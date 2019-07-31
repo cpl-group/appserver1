@@ -1,0 +1,175 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML XMLNS:o="urn:schemas-microsoft-com:office:office" 
+XMLNS:x="urn:schemas-microsoft-com:office:excel" 
+XMLNS:a="urn:schemas-microsoft-com:office:access" 
+XMLNS:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" xmlns:o = 
+"urn:schemas-microsoft-com:office:office" xmlns:x = 
+"urn:schemas-microsoft-com:office:excel" xmlns:a = 
+"urn:schemas-microsoft-com:office:access" xmlns:dt = 
+"uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><HEAD><TITLE>start_up_report</TITLE><LINK 
+href="./sur_files/filelist.xml" type=text/xml rel=File-List>
+<META content=Access.Application name=ProgId>
+<META name=VBSForEventHandlers VALUE="TRUE">
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<STYLE id=MSODAPDEFAULTS type=text/css rel="stylesheet">.mstheme-label {
+	FONT-SIZE: 8pt; FONT-FAMILY: Tahoma
+}
+TEXTAREA {
+	FONT-SIZE: 8pt; FONT-FAMILY: Tahoma
+}
+.msoboundhtml {
+	FONT-SIZE: 8pt; FONT-FAMILY: Tahoma
+}
+HR {
+	COLOR: black
+}
+SELECT {
+	FONT-SIZE: 8pt; FONT-FAMILY: Tahoma
+}
+INPUT {
+	FONT-SIZE: 8pt; FONT-FAMILY: Tahoma
+}
+BODY {
+	FONT-SIZE: 10pt; FONT-FAMILY: Tahoma
+}
+MARQUEE {
+	FONT-SIZE: 8pt; FONT-FAMILY: Tahoma
+}
+LEGEND {
+	FONT-SIZE: 8pt; FONT-FAMILY: Tahoma
+}
+.msoHyperlinkDisplayText {
+	FONT-SIZE: 8pt; FONT-FAMILY: Tahoma
+}
+BUTTON {
+	FONT-SIZE: 8pt; FONT-FAMILY: Tahoma
+}
+.MsoShowDesignGrid {
+	BEHAVIOR: url(#DEFAULT#MsoShowDesignGrid)
+}
+</STYLE>
+
+<OBJECT id=MSODSC codeBase=file:msowc.cab#version=9,0,0,2710 
+classid=CLSID:0002E530-0000-0000-C000-000000000046><PARAM NAME="XMLData" VALUE='<xml xmlns:a="urn:schemas-microsoft-com:office:access">&#13;&#10; <a:DataSourceControl>&#13;&#10;  <a:OWCVersion>9.0.0.2710</a:OWCVersion>&#13;&#10;  <a:ConnectionString>Provider=SQLOLEDB.1;Persist Security Info=False;User ID=sa;Initial Catalog=main;Data Source=ELISA</a:ConnectionString>&#13;&#10;  <a:MaxRecords>10000</a:MaxRecords>&#13;&#10;  <a:GridX>24</a:GridX>&#13;&#10;  <a:GridY>24</a:GridY>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>start_up_reportNavigation</a:ElementID>&#13;&#10;   <a:ConsumesRecordset/>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>start_up_report-sur_numNavigation</a:ElementID>&#13;&#10;   <a:ConsumesRecordset/>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>GroupOfstart_up_report-sur_num</a:ElementID>&#13;&#10;   <a:ControlSource>GroupOfstart_up_report-sur_num</a:ControlSource>&#13;&#10;   <a:ChildLabel>GroupOfstart_up_report-sur_num_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>meternum</a:ElementID>&#13;&#10;   <a:ControlSource>meternum</a:ControlSource>&#13;&#10;   <a:ChildLabel>meternum_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>id</a:ElementID>&#13;&#10;   <a:ControlSource>id</a:ControlSource>&#13;&#10;   <a:ChildLabel>id_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>meterid</a:ElementID>&#13;&#10;   <a:ControlSource>meterid</a:ControlSource>&#13;&#10;   <a:ChildLabel>meterid_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>brand</a:ElementID>&#13;&#10;   <a:ControlSource>brand</a:ControlSource>&#13;&#10;   <a:ChildLabel>brand_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>voltage</a:ElementID>&#13;&#10;   <a:ControlSource>voltage</a:ControlSource>&#13;&#10;   <a:ChildLabel>voltage_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>ct_ratio</a:ElementID>&#13;&#10;   <a:ControlSource>ct_ratio</a:ControlSource>&#13;&#10;   <a:ChildLabel>ct_ratio_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>tenant_num</a:ElementID>&#13;&#10;   <a:ControlSource>tenant_num</a:ControlSource>&#13;&#10;   <a:ChildLabel>tenant_num_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>tenant_name</a:ElementID>&#13;&#10;   <a:ControlSource>tenant_name</a:ControlSource>&#13;&#10;   <a:ChildLabel>tenant_name_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>bldg</a:ElementID>&#13;&#10;   <a:ControlSource>bldg</a:ControlSource>&#13;&#10;   <a:ChildLabel>bldg_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>Unit</a:ElementID>&#13;&#10;   <a:ControlSource>Unit</a:ControlSource>&#13;&#10;   <a:ChildLabel>Unit_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>device_id</a:ElementID>&#13;&#10;   <a:ControlSource>device_id</a:ControlSource>&#13;&#10;   <a:ChildLabel>device_id_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>IP</a:ElementID>&#13;&#10;   <a:ControlSource>IP</a:ControlSource>&#13;&#10;   <a:ChildLabel>IP_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>usage_multiplier</a:ElementID>&#13;&#10;   <a:ControlSource>usage_multiplier</a:ControlSource>&#13;&#10;   <a:ChildLabel>usage_multiplier_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>demand_multiplier</a:ElementID>&#13;&#10;   <a:ControlSource>demand_multiplier</a:ControlSource>&#13;&#10;   <a:ChildLabel>demand_multiplier_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>Location</a:ElementID>&#13;&#10;   <a:ControlSource>Location</a:ControlSource>&#13;&#10;   <a:ChildLabel>Location_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>counter_id</a:ElementID>&#13;&#10;   <a:ControlSource>counter_id</a:ControlSource>&#13;&#10;   <a:ChildLabel>counter_id_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>counter_ch</a:ElementID>&#13;&#10;   <a:ControlSource>counter_ch</a:ControlSource>&#13;&#10;   <a:ChildLabel>counter_ch_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>read_date_2</a:ElementID>&#13;&#10;   <a:ControlSource>read_date_2</a:ControlSource>&#13;&#10;   <a:ChildLabel>read_date_2_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>read_date_1</a:ElementID>&#13;&#10;   <a:ControlSource>read_date_1</a:ControlSource>&#13;&#10;   <a:ChildLabel>read_date_1_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>reading_kwh_1</a:ElementID>&#13;&#10;   <a:ControlSource>reading_kwh_1</a:ControlSource>&#13;&#10;   <a:ChildLabel>reading_kwh_1_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>reading_kwh_2</a:ElementID>&#13;&#10;   <a:ControlSource>reading_kwh_2</a:ControlSource>&#13;&#10;   <a:ChildLabel>reading_kwh_2_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>reading_kw_1</a:ElementID>&#13;&#10;   <a:ControlSource>reading_kw_1</a:ControlSource>&#13;&#10;   <a:ChildLabel>reading_kw_1_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>reading_kw_2</a:ElementID>&#13;&#10;   <a:ControlSource>reading_kw_2</a:ControlSource>&#13;&#10;   <a:ChildLabel>reading_kw_2_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>sqft</a:ElementID>&#13;&#10;   <a:ControlSource>sqft</a:ControlSource>&#13;&#10;   <a:ChildLabel>sqft_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>job</a:ElementID>&#13;&#10;   <a:ControlSource>job</a:ControlSource>&#13;&#10;   <a:ChildLabel>job_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>Rate</a:ElementID>&#13;&#10;   <a:ControlSource>Rate</a:ControlSource>&#13;&#10;   <a:ChildLabel>Rate_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>bldg_name</a:ElementID>&#13;&#10;   <a:ControlSource>bldg_name</a:ControlSource>&#13;&#10;   <a:ChildLabel>bldg_name_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>model</a:ElementID>&#13;&#10;   <a:ControlSource>model</a:ControlSource>&#13;&#10;   <a:ChildLabel>model_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>note</a:ElementID>&#13;&#10;   <a:ControlSource>note</a:ControlSource>&#13;&#10;   <a:ChildLabel>note_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>type</a:ElementID>&#13;&#10;   <a:ControlSource>type</a:ControlSource>&#13;&#10;   <a:ChildLabel>type_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>pgi_upd</a:ElementID>&#13;&#10;   <a:ControlSource>pgi_upd</a:ControlSource>&#13;&#10;   <a:ChildLabel>pgi_upd_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>manual</a:ElementID>&#13;&#10;   <a:ControlSource>manual</a:ControlSource>&#13;&#10;   <a:ChildLabel>manual_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:ElementExtension>&#13;&#10;   <a:ElementID>factor</a:ElementID>&#13;&#10;   <a:ControlSource>factor</a:ControlSource>&#13;&#10;   <a:ChildLabel>factor_Label</a:ChildLabel>&#13;&#10;  </a:ElementExtension>&#13;&#10;  <a:GroupLevel>&#13;&#10;   <a:RecordSource>start_up_report-sur_num</a:RecordSource>&#13;&#10;   <a:DefaultSort>[GroupOfstart_up_report-sur_num]</a:DefaultSort>&#13;&#10;   <a:HeaderElementId>Headerstartupreportsurnum</a:HeaderElementId>&#13;&#10;   <a:FooterElementId></a:FooterElementId>&#13;&#10;   <a:CaptionElementId></a:CaptionElementId>&#13;&#10;   <a:RecordNavigationElementId>NavigationSectionstartupreportsurnum</a:RecordNavigationElementId>&#13;&#10;   <a:DataPageSize>1</a:DataPageSize>&#13;&#10;  </a:GroupLevel>&#13;&#10;  <a:GroupLevel>&#13;&#10;   <a:RecordSource>start_up_report</a:RecordSource>&#13;&#10;   <a:DefaultSort>[meternum] ASC</a:DefaultSort>&#13;&#10;   <a:HeaderElementId>Headerstartupreport</a:HeaderElementId>&#13;&#10;   <a:FooterElementId></a:FooterElementId>&#13;&#10;   <a:CaptionElementId></a:CaptionElementId>&#13;&#10;   <a:RecordNavigationElementId>NavigationSectionstartupreport</a:RecordNavigationElementId>&#13;&#10;   <a:DataPageSize>1</a:DataPageSize>&#13;&#10;  </a:GroupLevel>&#13;&#10;  <a:Datamodel version="0816">&#13;&#10;   <a:SchemaRowsource id="dbo.start_up_report" type="dscTable">&#13;&#10;    <a:SchemaField id="id" datatype="3" size="4" iskey="1"/>&#13;&#10;    <a:SchemaField id="meternum" datatype="200" size="20"/>&#13;&#10;    <a:SchemaField id="meterid" datatype="3" size="4"/>&#13;&#10;    <a:SchemaField id="brand" datatype="129" size="20"/>&#13;&#10;    <a:SchemaField id="voltage" datatype="129" size="20"/>&#13;&#10;    <a:SchemaField id="ct_ratio" datatype="129" size="20"/>&#13;&#10;    <a:SchemaField id="sur_num" datatype="129" size="20"/>&#13;&#10;    <a:SchemaField id="tenant_num" datatype="129" size="10"/>&#13;&#10;    <a:SchemaField id="tenant_name" datatype="200" size="50"/>&#13;&#10;    <a:SchemaField id="bldg" datatype="129" size="10"/>&#13;&#10;    <a:SchemaField id="Unit" datatype="129" size="3"/>&#13;&#10;    <a:SchemaField id="device_id" datatype="3" size="4"/>&#13;&#10;    <a:SchemaField id="IP" datatype="129" size="20"/>&#13;&#10;    <a:SchemaField id="usage_multiplier" datatype="3" size="4"/>&#13;&#10;    <a:SchemaField id="demand_multiplier" datatype="3" size="4"/>&#13;&#10;    <a:SchemaField id="Location" datatype="200" size="50"/>&#13;&#10;    <a:SchemaField id="counter_id" datatype="3" size="4"/>&#13;&#10;    <a:SchemaField id="counter_ch" datatype="3" size="4"/>&#13;&#10;    <a:SchemaField id="read_date_2" datatype="135" size="8"/>&#13;&#10;    <a:SchemaField id="read_date_1" datatype="135" size="8"/>&#13;&#10;    <a:SchemaField id="reading_kwh_1" datatype="3" size="4"/>&#13;&#10;    <a:SchemaField id="reading_kwh_2" datatype="3" size="4"/>&#13;&#10;    <a:SchemaField id="reading_kw_1" datatype="3" size="4"/>&#13;&#10;    <a:SchemaField id="reading_kw_2" datatype="3" size="4"/>&#13;&#10;    <a:SchemaField id="sqft" datatype="3" size="4"/>&#13;&#10;    <a:SchemaField id="job" datatype="129" size="10"/>&#13;&#10;    <a:SchemaField id="Rate" datatype="129" size="10"/>&#13;&#10;    <a:SchemaField id="bldg_name" datatype="200" size="50"/>&#13;&#10;    <a:SchemaField id="model" datatype="200" size="50"/>&#13;&#10;    <a:SchemaField id="note" datatype="203" size="16"/>&#13;&#10;    <a:SchemaField id="type" datatype="129" size="10"/>&#13;&#10;    <a:SchemaField id="timespamp" datatype="128" size="8"/>&#13;&#10;    <a:SchemaField id="pgi_upd" datatype="11" size="1"/>&#13;&#10;    <a:SchemaField id="manual" datatype="11" size="1"/>&#13;&#10;    <a:SchemaField id="factor" datatype="131" size="9"/>&#13;&#10;   </a:SchemaRowsource>&#13;&#10;   <a:RecordsetDef id="start_up_report" source="dbo.start_up_report">&#13;&#10;    <a:PageField id="id"/>&#13;&#10;    <a:PageField id="sur_num"/>&#13;&#10;    <a:PageField id="meternum"/>&#13;&#10;    <a:PageField id="meterid"/>&#13;&#10;    <a:PageField id="brand"/>&#13;&#10;    <a:PageField id="voltage"/>&#13;&#10;    <a:PageField id="ct_ratio"/>&#13;&#10;    <a:PageField id="tenant_num"/>&#13;&#10;    <a:PageField id="tenant_name"/>&#13;&#10;    <a:PageField id="bldg"/>&#13;&#10;    <a:PageField id="Unit"/>&#13;&#10;    <a:PageField id="device_id"/>&#13;&#10;    <a:PageField id="IP"/>&#13;&#10;    <a:PageField id="usage_multiplier"/>&#13;&#10;    <a:PageField id="demand_multiplier"/>&#13;&#10;    <a:PageField id="Location"/>&#13;&#10;    <a:PageField id="counter_id"/>&#13;&#10;    <a:PageField id="counter_ch"/>&#13;&#10;    <a:PageField id="read_date_2"/>&#13;&#10;    <a:PageField id="read_date_1"/>&#13;&#10;    <a:PageField id="reading_kwh_1"/>&#13;&#10;    <a:PageField id="reading_kwh_2"/>&#13;&#10;    <a:PageField id="reading_kw_1"/>&#13;&#10;    <a:PageField id="reading_kw_2"/>&#13;&#10;    <a:PageField id="sqft"/>&#13;&#10;    <a:PageField id="job"/>&#13;&#10;    <a:PageField id="Rate"/>&#13;&#10;    <a:PageField id="bldg_name"/>&#13;&#10;    <a:PageField id="model"/>&#13;&#10;    <a:PageField id="note"/>&#13;&#10;    <a:PageField id="type"/>&#13;&#10;    <a:PageField id="pgi_upd"/>&#13;&#10;    <a:PageField id="manual"/>&#13;&#10;    <a:PageField id="factor"/>&#13;&#10;    <a:GroupingDef id="start_up_report-sur_num">&#13;&#10;     <a:PageField id="GroupOfstart_up_report-sur_num" source="sur_num"/>&#13;&#10;    </a:GroupingDef>&#13;&#10;   </a:RecordsetDef>&#13;&#10;  </a:Datamodel>&#13;&#10; </a:DataSourceControl>&#13;&#10;</xml>'></OBJECT>
+<META content="MSHTML 6.00.2800.1400" name=GENERATOR><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>giammog</o:Author>
+  <o:LastAuthor>giammog</o:LastAuthor>
+  <o:Revision>4</o:Revision>
+  <o:TotalTime>1</o:TotalTime>
+  <o:Created>2004-03-02T21:01:38Z</o:Created>
+  <o:LastSaved>2004-03-02T21:17:55Z</o:LastSaved>
+  <o:Company>.</o:Company>
+  <o:Version>9.2720</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:DownloadComponents/>
+  <o:LocationOfComponents HRef="file:msowc.cab"/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--></HEAD>
+<BODY style="OVERFLOW: auto" bottomMargin=48 vLink=#800080 link=#800080 
+leftMargin=24 topMargin=24 rightMargin=24>
+<CENTER>
+<H1 id=HeadingText style="FONT-WEIGHT: normal">&nbsp;</H1></CENTER>
+<P>&nbsp;</P>
+<DIV class=MicrosoftAccessBanner id=HeaderstartupreportsurnumBanner 
+style="BORDER-RIGHT: buttonhighlight 2px outset; BORDER-TOP: buttonhighlight 2px outset; DISPLAY: none; PADDING-LEFT: 1px; FONT-WEIGHT: normal; FONT-SIZE: 8pt; OVERFLOW: hidden; BORDER-LEFT: buttonhighlight 2px outset; WIDTH: 518px; BORDER-BOTTOM: buttonhighlight 2px outset; FONT-FAMILY: Tahoma; HEIGHT: 0.2in; BACKGROUND-COLOR: buttonface">Header: 
+start_up_report-sur_num</DIV>
+<DIV class=MSOShowDesignGrid id=Headerstartupreportsurnum 
+style="VISIBILITY: hidden; OVERFLOW: hidden; WIDTH: 518px; POSITION: relative; HEIGHT: 26px; BACKGROUND-COLOR: transparent">
+<OBJECT id=start_up_report-sur_numExpand 
+style="LEFT: 8px; WIDTH: 20px; POSITION: absolute; TOP: 8px; HEIGHT: 20px" 
+codeBase=file:msowc.cab#version=9,0,0,2710 
+classid=CLSID:0002E532-0000-0000-C000-000000000046><PARAM NAME="_State" VALUE=""><PARAM NAME="Bitmap" VALUE="0"></OBJECT><SPAN class=MSTheme-Label 
+id=GroupOfstart_up_report-sur_num_Label title=GroupOfstart_up_report-sur_num 
+style="PADDING-LEFT: 1px; LEFT: 0.333in; OVERFLOW: visible; WIDTH: 1.083in; POSITION: absolute; TOP: 0in; HEIGHT: 0.177in">GroupOfstart_up_report-sur_num</SPAN><TEXTAREA id=GroupOfstart_up_report-sur_num title=GroupOfstart_up_report-sur_num style="LEFT: 1.417in; OVERFLOW: hidden; WIDTH: 1.604in; POSITION: absolute; TOP: 0in; HEIGHT: 0.177in" tabIndex=1></TEXTAREA></DIV>
+<DIV class=MicrosoftAccessBanner id=HeaderstartupreportBanner 
+style="BORDER-RIGHT: buttonhighlight 2px outset; BORDER-TOP: buttonhighlight 2px outset; DISPLAY: none; PADDING-LEFT: 1px; FONT-WEIGHT: normal; FONT-SIZE: 8pt; OVERFLOW: hidden; BORDER-LEFT: buttonhighlight 2px outset; WIDTH: 518px; BORDER-BOTTOM: buttonhighlight 2px outset; FONT-FAMILY: Tahoma; HEIGHT: 0.2in; BACKGROUND-COLOR: buttonface">Header: 
+start_up_report</DIV>
+<DIV class=MSOShowDesignGrid id=Headerstartupreport 
+style="VISIBILITY: hidden; OVERFLOW: hidden; WIDTH: 518px; POSITION: relative; HEIGHT: 793px; BACKGROUND-COLOR: transparent"><SPAN 
+class=MSTheme-Label id=meternum_Label title=meternum 
+style="PADDING-LEFT: 1px; LEFT: 1.25in; OVERFLOW: visible; WIDTH: 1.083in; POSITION: absolute; TOP: 0in; HEIGHT: 0.177in">meternum</SPAN><TEXTAREA id=meternum title=meternum style="LEFT: 2.333in; OVERFLOW: hidden; WIDTH: 1.604in; POSITION: absolute; TOP: 0in; HEIGHT: 0.177in" tabIndex=2></TEXTAREA><SPAN 
+class=MSTheme-Label id=id_Label title=id 
+style="PADDING-LEFT: 1px; LEFT: 1.25in; OVERFLOW: visible; WIDTH: 1.083in; POSITION: absolute; TOP: 0.25in; HEIGHT: 0.177in">id</SPAN><TEXTAREA id=id title=id style="LEFT: 2.333in; OVERFLOW: hidden; WIDTH: 1.604in; POSITION: absolute; TOP: 0.25in; HEIGHT: 0.177in" tabIndex=3></TEXTAREA><SPAN 
+class=MSTheme-Label id=meterid_Label title=meterid 
+style="PADDING-LEFT: 1px; LEFT: 1.25in; OVERFLOW: visible; WIDTH: 1.083in; POSITION: absolute; TOP: 0.5in; HEIGHT: 0.177in">meterid</SPAN><TEXTAREA id=meterid title=meterid style="LEFT: 2.333in; OVERFLOW: hidden; WIDTH: 1.604in; POSITION: absolute; TOP: 0.5in; HEIGHT: 0.177in" tabIndex=4></TEXTAREA><SPAN 
+class=MSTheme-Label id=brand_Label title=brand 
+style="PADDING-LEFT: 1px; LEFT: 1.25in; OVERFLOW: visible; WIDTH: 1.083in; POSITION: absolute; TOP: 0.75in; HEIGHT: 0.177in">brand</SPAN><TEXTAREA id=brand title=brand style="LEFT: 2.333in; OVERFLOW: hidden; WIDTH: 1.604in; POSITION: absolute; TOP: 0.75in; HEIGHT: 0.177in" tabIndex=5></TEXTAREA><SPAN 
+class=MSTheme-Label id=voltage_Label title=voltage 
+style="PADDING-LEFT: 1px; LEFT: 1.25in; OVERFLOW: visible; WIDTH: 1.083in; POSITION: absolute; TOP: 1in; HEIGHT: 0.177in">voltage</SPAN><TEXTAREA id=voltage title=voltage style="LEFT: 2.333in; OVERFLOW: hidden; WIDTH: 1.604in; POSITION: absolute; TOP: 1in; HEIGHT: 0.177in" tabIndex=6></TEXTAREA><SPAN 
+class=MSTheme-Label id=ct_ratio_Label title=ct_ratio 
+style="PADDING-LEFT: 1px; LEFT: 1.25in; OVERFLOW: visible; WIDTH: 1.083in; POSITION: absolute; TOP: 1.25in; HEIGHT: 0.177in">ct_ratio</SPAN><TEXTAREA id=ct_ratio title=ct_ratio style="LEFT: 2.333in; OVERFLOW: hidden; WIDTH: 1.604in; POSITION: absolute; TOP: 1.25in; HEIGHT: 0.177in" tabIndex=7></TEXTAREA><SPAN 
+class=MSTheme-Label id=tenant_num_Label title=tenant_num 
+style="PADDING-LEFT: 1px; LEFT: 1.25in; OVERFLOW: visible; WIDTH: 1.083in; POSITION: absolute; TOP: 1.5in; HEIGHT: 0.177in">tenant_num</SPAN><TEXTAREA id=tenant_num title=tenant_num style="LEFT: 2.333in; OVERFLOW: hidden; WIDTH: 1.604in; POSITION: absolute; TOP: 1.5in; HEIGHT: 0.177in" tabIndex=8></TEXTAREA><SPAN 
+class=MSTheme-Label id=tenant_name_Label title=tenant_name 
+style="PADDING-LEFT: 1px; LEFT: 1.25in; OVERFLOW: visible; WIDTH: 1.083in; POSITION: absolute; TOP: 1.75in; HEIGHT: 0.177in">tenant_name</SPAN><TEXTAREA id=tenant_name title=tenant_name style="LEFT: 2.333in; OVERFLOW: hidden; WIDTH: 1.604in; POSITION: absolute; TOP: 1.75in; HEIGHT: 0.177in" tabIndex=9></TEXTAREA><SPAN 
+class=MSTheme-Label id=bldg_Label title=bldg 
+style="PADDING-LEFT: 1px; LEFT: 1.25in; OVERFLOW: visible; WIDTH: 1.083in; POSITION: absolute; TOP: 2in; HEIGHT: 0.177in">bldg</SPAN><TEXTAREA id=bldg title=bldg style="LEFT: 2.333in; OVERFLOW: hidden; WIDTH: 1.604in; POSITION: absolute; TOP: 2in; HEIGHT: 0.177in" tabIndex=10></TEXTAREA><SPAN 
+class=MSTheme-Label id=Unit_Label title=Unit 
+style="PADDING-LEFT: 1px; LEFT: 1.25in; OVERFLOW: visible; WIDTH: 1.083in; POSITION: absolute; TOP: 2.25in; HEIGHT: 0.177in">Unit</SPAN><TEXTAREA id=Unit title=Unit style="LEFT: 2.333in; OVERFLOW: hidden; WIDTH: 1.604in; POSITION: absolute; TOP: 2.25in; HEIGHT: 0.177in" tabIndex=11></TEXTAREA><SPAN 
+class=MSTheme-Label id=device_id_Label title=device_id 
+style="PADDING-LEFT: 1px; LEFT: 1.25in; OVERFLOW: visible; WIDTH: 1.083in; POSITION: absolute; TOP: 2.5in; HEIGHT: 0.177in">device_id</SPAN><TEXTAREA id=device_id title=device_id style="LEFT: 2.333in; OVERFLOW: hidden; WIDTH: 1.604in; POSITION: absolute; TOP: 2.5in; HEIGHT: 0.177in" tabIndex=12></TEXTAREA><SPAN 
+class=MSTheme-Label id=IP_Label title=IP 
+style="PADDING-LEFT: 1px; LEFT: 1.25in; OVERFLOW: visible; WIDTH: 1.083in; POSITION: absolute; TOP: 2.75in; HEIGHT: 0.177in">IP</SPAN><TEXTAREA id=IP title=IP style="LEFT: 2.333in; OVERFLOW: hidden; WIDTH: 1.604in; POSITION: absolute; TOP: 2.75in; HEIGHT: 0.177in" tabIndex=13></TEXTAREA><SPAN 
+class=MSTheme-Label id=usage_multiplier_Label title=usage_multiplier 
+style="PADDING-LEFT: 1px; LEFT: 1.25in; OVERFLOW: visible; WIDTH: 1.083in; POSITION: absolute; TOP: 3in; HEIGHT: 0.177in">usage_multiplier</SPAN><TEXTAREA id=usage_multiplier title=usage_multiplier style="LEFT: 2.333in; OVERFLOW: hidden; WIDTH: 1.604in; POSITION: absolute; TOP: 3in; HEIGHT: 0.177in" tabIndex=14></TEXTAREA><SPAN 
+class=MSTheme-Label id=demand_multiplier_Label title=demand_multiplier 
+style="PADDING-LEFT: 1px; LEFT: 1.25in; OVERFLOW: visible; WIDTH: 1.083in; POSITION: absolute; TOP: 3.25in; HEIGHT: 0.177in">demand_multiplier</SPAN><TEXTAREA id=demand_multiplier title=demand_multiplier style="LEFT: 2.333in; OVERFLOW: hidden; WIDTH: 1.604in; POSITION: absolute; TOP: 3.25in; HEIGHT: 0.177in" tabIndex=15></TEXTAREA><SPAN 
+class=MSTheme-Label id=Location_Label title=Location 
+style="PADDING-LEFT: 1px; LEFT: 1.25in; OVERFLOW: visible; WIDTH: 1.083in; POSITION: absolute; TOP: 3.5in; HEIGHT: 0.177in">Location</SPAN><TEXTAREA id=Location title=Location style="LEFT: 2.333in; OVERFLOW: hidden; WIDTH: 2.874in; POSITION: absolute; TOP: 3.5in; HEIGHT: 0.166in" tabIndex=16 rows=1 cols=35></TEXTAREA><SPAN 
+class=MSTheme-Label id=counter_id_Label title=counter_id 
+style="PADDING-LEFT: 1px; LEFT: 1.25in; OVERFLOW: visible; WIDTH: 1.083in; POSITION: absolute; TOP: 3.75in; HEIGHT: 0.177in">counter_id</SPAN><TEXTAREA id=counter_id title=counter_id style="LEFT: 2.333in; OVERFLOW: hidden; WIDTH: 1.604in; POSITION: absolute; TOP: 3.75in; HEIGHT: 0.177in" tabIndex=17></TEXTAREA><SPAN 
+class=MSTheme-Label id=counter_ch_Label title=counter_ch 
+style="PADDING-LEFT: 1px; LEFT: 1.25in; OVERFLOW: visible; WIDTH: 1.083in; POSITION: absolute; TOP: 4in; HEIGHT: 0.177in">counter_ch</SPAN><TEXTAREA id=counter_ch title=counter_ch style="LEFT: 2.333in; OVERFLOW: hidden; WIDTH: 1.604in; POSITION: absolute; TOP: 4in; HEIGHT: 0.177in" tabIndex=18></TEXTAREA><SPAN 
+class=MSTheme-Label id=read_date_2_Label title=read_date_2 
+style="PADDING-LEFT: 1px; LEFT: 1.25in; OVERFLOW: visible; WIDTH: 1.083in; POSITION: absolute; TOP: 4.25in; HEIGHT: 0.177in">read_date_2</SPAN><TEXTAREA id=read_date_2 title=read_date_2 style="LEFT: 2.333in; OVERFLOW: hidden; WIDTH: 1.604in; POSITION: absolute; TOP: 4.25in; HEIGHT: 0.177in" tabIndex=19></TEXTAREA><SPAN 
+class=MSTheme-Label id=read_date_1_Label title=read_date_1 
+style="PADDING-LEFT: 1px; LEFT: 1.25in; OVERFLOW: visible; WIDTH: 1.083in; POSITION: absolute; TOP: 4.5in; HEIGHT: 0.177in">read_date_1</SPAN><TEXTAREA id=read_date_1 title=read_date_1 style="LEFT: 2.333in; OVERFLOW: hidden; WIDTH: 1.604in; POSITION: absolute; TOP: 4.5in; HEIGHT: 0.177in" tabIndex=20></TEXTAREA><SPAN 
+class=MSTheme-Label id=reading_kwh_1_Label title=reading_kwh_1 
+style="PADDING-LEFT: 1px; LEFT: 1.25in; OVERFLOW: visible; WIDTH: 1.083in; POSITION: absolute; TOP: 4.75in; HEIGHT: 0.177in">reading_kwh_1</SPAN><TEXTAREA id=reading_kwh_1 title=reading_kwh_1 style="LEFT: 2.333in; OVERFLOW: hidden; WIDTH: 1.604in; POSITION: absolute; TOP: 4.75in; HEIGHT: 0.177in" tabIndex=21></TEXTAREA><SPAN 
+class=MSTheme-Label id=reading_kwh_2_Label title=reading_kwh_2 
+style="PADDING-LEFT: 1px; LEFT: 1.25in; OVERFLOW: visible; WIDTH: 1.083in; POSITION: absolute; TOP: 5in; HEIGHT: 0.177in">reading_kwh_2</SPAN><TEXTAREA id=reading_kwh_2 title=reading_kwh_2 style="LEFT: 2.333in; OVERFLOW: hidden; WIDTH: 1.604in; POSITION: absolute; TOP: 5in; HEIGHT: 0.177in" tabIndex=22></TEXTAREA><SPAN 
+class=MSTheme-Label id=reading_kw_1_Label title=reading_kw_1 
+style="PADDING-LEFT: 1px; LEFT: 1.25in; OVERFLOW: visible; WIDTH: 1.083in; POSITION: absolute; TOP: 5.25in; HEIGHT: 0.177in">reading_kw_1</SPAN><TEXTAREA id=reading_kw_1 title=reading_kw_1 style="LEFT: 2.333in; OVERFLOW: hidden; WIDTH: 1.604in; POSITION: absolute; TOP: 5.25in; HEIGHT: 0.177in" tabIndex=23></TEXTAREA><SPAN 
+class=MSTheme-Label id=reading_kw_2_Label title=reading_kw_2 
+style="PADDING-LEFT: 1px; LEFT: 1.25in; OVERFLOW: visible; WIDTH: 1.083in; POSITION: absolute; TOP: 5.5in; HEIGHT: 0.177in">reading_kw_2</SPAN><TEXTAREA id=reading_kw_2 title=reading_kw_2 style="LEFT: 2.333in; OVERFLOW: hidden; WIDTH: 1.604in; POSITION: absolute; TOP: 5.5in; HEIGHT: 0.177in" tabIndex=24></TEXTAREA><SPAN 
+class=MSTheme-Label id=sqft_Label title=sqft 
+style="PADDING-LEFT: 1px; LEFT: 1.25in; OVERFLOW: visible; WIDTH: 1.083in; POSITION: absolute; TOP: 5.75in; HEIGHT: 0.177in">sqft</SPAN><TEXTAREA id=sqft title=sqft style="LEFT: 2.333in; OVERFLOW: hidden; WIDTH: 1.604in; POSITION: absolute; TOP: 5.75in; HEIGHT: 0.177in" tabIndex=25></TEXTAREA><SPAN 
+class=MSTheme-Label id=job_Label title=job 
+style="PADDING-LEFT: 1px; LEFT: 1.25in; OVERFLOW: visible; WIDTH: 1.083in; POSITION: absolute; TOP: 6in; HEIGHT: 0.177in">job</SPAN><TEXTAREA id=job title=job style="LEFT: 2.333in; OVERFLOW: hidden; WIDTH: 1.604in; POSITION: absolute; TOP: 6in; HEIGHT: 0.177in" tabIndex=26></TEXTAREA><SPAN 
+class=MSTheme-Label id=Rate_Label title=Rate 
+style="PADDING-LEFT: 1px; LEFT: 1.25in; OVERFLOW: visible; WIDTH: 1.083in; POSITION: absolute; TOP: 6.25in; HEIGHT: 0.177in">Rate</SPAN><TEXTAREA id=Rate title=Rate style="LEFT: 2.333in; OVERFLOW: hidden; WIDTH: 1.604in; POSITION: absolute; TOP: 6.25in; HEIGHT: 0.177in" tabIndex=27></TEXTAREA><SPAN 
+class=MSTheme-Label id=bldg_name_Label title=bldg_name 
+style="PADDING-LEFT: 1px; LEFT: 1.25in; OVERFLOW: visible; WIDTH: 1.083in; POSITION: absolute; TOP: 6.5in; HEIGHT: 0.177in">bldg_name</SPAN><TEXTAREA id=bldg_name title=bldg_name style="LEFT: 2.333in; OVERFLOW: hidden; WIDTH: 1.604in; POSITION: absolute; TOP: 6.5in; HEIGHT: 0.177in" tabIndex=28></TEXTAREA><SPAN 
+class=MSTheme-Label id=model_Label title=model 
+style="PADDING-LEFT: 1px; LEFT: 1.25in; OVERFLOW: visible; WIDTH: 1.083in; POSITION: absolute; TOP: 6.75in; HEIGHT: 0.177in">model</SPAN><TEXTAREA id=model title=model style="LEFT: 2.333in; OVERFLOW: hidden; WIDTH: 1.604in; POSITION: absolute; TOP: 6.75in; HEIGHT: 0.177in" tabIndex=29></TEXTAREA><SPAN 
+class=MSTheme-Label id=note_Label title=note 
+style="PADDING-LEFT: 1px; LEFT: 1.25in; OVERFLOW: visible; WIDTH: 1.083in; POSITION: absolute; TOP: 7in; HEIGHT: 0.177in">note</SPAN><TEXTAREA id=note title=note style="LEFT: 2.333in; OVERFLOW: hidden; WIDTH: 1.604in; POSITION: absolute; TOP: 7in; HEIGHT: 0.177in" tabIndex=30></TEXTAREA><SPAN 
+class=MSTheme-Label id=type_Label title=type 
+style="PADDING-LEFT: 1px; LEFT: 1.25in; OVERFLOW: visible; WIDTH: 1.083in; POSITION: absolute; TOP: 7.25in; HEIGHT: 0.177in">type</SPAN><TEXTAREA id=type title=type style="LEFT: 2.333in; OVERFLOW: hidden; WIDTH: 1.604in; POSITION: absolute; TOP: 7.25in; HEIGHT: 0.177in" tabIndex=31></TEXTAREA><SPAN 
+class=MSTheme-Label id=pgi_upd_Label title=pgi_upd 
+style="PADDING-LEFT: 1px; LEFT: 1.25in; OVERFLOW: visible; WIDTH: 1.083in; POSITION: absolute; TOP: 7.5in; HEIGHT: 0.177in">pgi_upd</SPAN><TEXTAREA id=pgi_upd title=pgi_upd style="LEFT: 2.333in; OVERFLOW: hidden; WIDTH: 1.604in; POSITION: absolute; TOP: 7.5in; HEIGHT: 0.177in" tabIndex=32></TEXTAREA><SPAN 
+class=MSTheme-Label id=manual_Label title=manual 
+style="PADDING-LEFT: 1px; LEFT: 1.25in; OVERFLOW: visible; WIDTH: 1.083in; POSITION: absolute; TOP: 7.75in; HEIGHT: 0.177in">manual</SPAN><TEXTAREA id=manual title=manual style="LEFT: 2.333in; OVERFLOW: hidden; WIDTH: 1.604in; POSITION: absolute; TOP: 7.75in; HEIGHT: 0.177in" tabIndex=33></TEXTAREA><SPAN 
+class=MSTheme-Label id=factor_Label title=factor 
+style="PADDING-LEFT: 1px; LEFT: 1.25in; OVERFLOW: visible; WIDTH: 1.083in; POSITION: absolute; TOP: 8in; HEIGHT: 0.177in">factor</SPAN><TEXTAREA id=factor title=factor style="LEFT: 2.333in; OVERFLOW: hidden; WIDTH: 1.604in; POSITION: absolute; TOP: 8in; HEIGHT: 0.177in" tabIndex=34></TEXTAREA></DIV>
+<DIV class=MicrosoftAccessBanner id=NavigationSectionstartupreportBanner 
+style="BORDER-RIGHT: buttonhighlight 2px outset; BORDER-TOP: buttonhighlight 2px outset; DISPLAY: none; PADDING-LEFT: 1px; FONT-WEIGHT: normal; FONT-SIZE: 8pt; OVERFLOW: hidden; BORDER-LEFT: buttonhighlight 2px outset; WIDTH: 518px; BORDER-BOTTOM: buttonhighlight 2px outset; FONT-FAMILY: Tahoma; HEIGHT: 0.2in; BACKGROUND-COLOR: buttonface">NavigationSection: 
+start_up_report</DIV>
+<DIV class=MSOShowDesignGrid id=NavigationSectionstartupreport 
+style="VISIBILITY: hidden; OVERFLOW: hidden; WIDTH: 518px; POSITION: relative; HEIGHT: 35px; BACKGROUND-COLOR: transparent">
+<OBJECT id=start_up_reportNavigation 
+style="LEFT: 8px; WIDTH: 462px; POSITION: absolute; TOP: 5px" 
+codeBase=file:msowc.cab#version=9,0,0,2710 
+classid=CLSID:0002E531-0000-0000-C000-000000000046><PARAM NAME="_State" VALUE=""><PARAM NAME="RecordSource" VALUE="start_up_report"><PARAM NAME="RecordsetLabel" VALUE="start_up_report |0 of |2;start_up_report |0-|1 of |2"><PARAM NAME="ShowFirstButton" VALUE="-1"><PARAM NAME="ShowPrevButton" VALUE="-1"><PARAM NAME="ShowNextButton" VALUE="-1"><PARAM NAME="ShowLastButton" VALUE="-1"><PARAM NAME="ShowNewButton" VALUE="-1"><PARAM NAME="ShowDelButton" VALUE="-1"><PARAM NAME="ShowSaveButton" VALUE="-1"><PARAM NAME="ShowUndoButton" VALUE="-1"><PARAM NAME="ShowSortAscendingButton" VALUE="-1"><PARAM NAME="ShowSortDecendingButton" VALUE="-1"><PARAM NAME="ShowApplyFilterButton" VALUE="-1"><PARAM NAME="ShowToggleFilterButton" VALUE="-1"><PARAM NAME="ShowHelpButton" VALUE="-1"><PARAM NAME="ShowLabel" VALUE="-1"><PARAM NAME="FontName" VALUE="Tahoma"></OBJECT></DIV>
+<DIV class=MicrosoftAccessBanner id=NavigationSectionstartupreportsurnumBanner 
+style="BORDER-RIGHT: buttonhighlight 2px outset; BORDER-TOP: buttonhighlight 2px outset; DISPLAY: none; PADDING-LEFT: 1px; FONT-WEIGHT: normal; FONT-SIZE: 8pt; OVERFLOW: hidden; BORDER-LEFT: buttonhighlight 2px outset; WIDTH: 518px; BORDER-BOTTOM: buttonhighlight 2px outset; FONT-FAMILY: Tahoma; HEIGHT: 0.2in; BACKGROUND-COLOR: buttonface">NavigationSection: 
+start_up_report-sur_num</DIV>
+<DIV class=MSOShowDesignGrid id=NavigationSectionstartupreportsurnum 
+style="VISIBILITY: hidden; OVERFLOW: hidden; WIDTH: 518px; POSITION: relative; HEIGHT: 35px; BACKGROUND-COLOR: transparent">
+<OBJECT id=start_up_report-sur_numNavigation 
+style="LEFT: 8px; WIDTH: 510px; POSITION: absolute; TOP: 5px" 
+codeBase=file:msowc.cab#version=9,0,0,2710 
+classid=CLSID:0002E531-0000-0000-C000-000000000046><PARAM NAME="_State" VALUE=""><PARAM NAME="RecordSource" VALUE="start_up_report-sur_num"><PARAM NAME="RecordsetLabel" VALUE="start_up_report-sur_num |0 of |2;start_up_report-sur_num |0-|1 of |2"><PARAM NAME="ShowFirstButton" VALUE="-1"><PARAM NAME="ShowPrevButton" VALUE="-1"><PARAM NAME="ShowNextButton" VALUE="-1"><PARAM NAME="ShowLastButton" VALUE="-1"><PARAM NAME="ShowNewButton" VALUE="-1"><PARAM NAME="ShowDelButton" VALUE="-1"><PARAM NAME="ShowSaveButton" VALUE="-1"><PARAM NAME="ShowUndoButton" VALUE="-1"><PARAM NAME="ShowSortAscendingButton" VALUE="-1"><PARAM NAME="ShowSortDecendingButton" VALUE="-1"><PARAM NAME="ShowApplyFilterButton" VALUE="-1"><PARAM NAME="ShowToggleFilterButton" VALUE="-1"><PARAM NAME="ShowHelpButton" VALUE="-1"><PARAM NAME="ShowLabel" VALUE="-1"><PARAM NAME="FontName" VALUE="Tahoma"></OBJECT></DIV>
+<P>&nbsp;</P></BODY></HTML>

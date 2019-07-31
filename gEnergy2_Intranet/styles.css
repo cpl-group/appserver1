@@ -1,0 +1,42 @@
+body, p, td, input, textarea, select { font-family:Arial,Helvetica,sans-serif; font-size:8pt; }
+.standard { font-family:Arial,Helvetica,sans-serif;font-size:8pt; }
+.standardheader { font-family:Arial,Helvetica,sans-serif;font-size:8pt;font-weight:bold;color:#ffffff; }
+.bottomline { border-bottom:1px solid #eeeeee; }
+.floorlink { font-family:Arial,Helvetica,sans-serif;font-size:8pt; color:#0099ff; }
+a.floorlink:hover { color:lightgreen; }
+.shrunkenheader { font-family:Arial,Helvetica,sans-serif;font-size:7pt;font-weight:bold; }
+a.breadcrumb { font-family:Arial,Helvetica,sans-serif;font-size:8pt; color:#ffffff; }
+a.breadcrumb:hover { color:#ccf3cc; }
+a { color:#006699; }
+body  { margin:0px; }
+
+.tblunderline { border-bottom:1px solid #dddddd; }
+.notetext { color:#990033; }
+
+body {
+scrollbar-face-color: #dddddd;
+scrollbar-highlight-color: #ffffff;
+scrollbar-shadow-color: #eeeeee;
+scrollbar-3dlight-color: #999999;
+scrollbar-arrow-color: #000000;
+scrollbar-track-color: #336699;
+scrollbar-darkshadow-color: #333333;
+}
+
+.innerbody {
+scrollbar-face-color: #dddddd;
+scrollbar-highlight-color: #ffffff;
+scrollbar-shadow-color: #eeeeee;
+scrollbar-3dlight-color: #999999;
+scrollbar-arrow-color: #000000;
+scrollbar-track-color: #6699cc;
+scrollbar-base-color: #ff0000;
+scrollbar-darkshadow-color: #333333;
+}
+
+.borderTRBL000 { border:1px solid #000000; }
+.borderB000 { border-bottom:1px solid #000000; }
+.borderT000 { border-top:1px solid #000000; }
+.borderLCCC { border-left:1px solid #cccccc; }
+.borderBCCC { border-bottom:1px solid #cccccc; }
+.borderBLCCC { border-bottom:1px solid #cccccc;border-left:1px solid #cccccc; }

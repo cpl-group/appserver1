@@ -1,0 +1,100 @@
+11/19/2007:12:05:18 PM start
+11/19/2007:12:05:18 PM First SQL
+11/19/2007:12:05:18 PM SELECT portfolioid, portfolio, case serverip when '' then '10.0.7.149' else serverip end as ip, bt.name as btid, logo, billurl, location, sm.bldgnum, u.utilitydisplay FROM buildings sm, [10.0.7.149].dbCore.dbo.portfolio p, billtemplates bt, tblutility u WHERE u.utilityid=2 and sm.portfolioid=p.id and bt.id=p.templateid AND sm.id='730'
+11/19/2007:12:05:18 PM SELECT count(distinct lup.leaseutilityid) as billCount  FROM tblleasesutilityprices lup, tblleases l, meters m  WHERE l.billingid=lup.billingid and lup.leaseutilityid=m.leaseutilityid   and m.nobill=0 and online=1 and l.leaseexpired=0 and l.bldgnum='PABT' and lup.utility=2
+11/19/2007:12:05:19 PM Creating PDF
+11/19/2007:12:05:19 PM C:\ghnet_websites\genergyonline.com\pdfMaker\PA\PABT
+11/19/2007:12:05:19 PM C:\ghnet_websites\appserver1\genergy2\G1ConsolePDFs
+11/19/2007:12:05:19 PM <table width=100% height=200 border=0 bgcolor=#FFFFFF><tr><td height=68 valign=top><img src=http://appserver1.genergy.com/eri_th/pdfMaker/pa_logos.jpg hspace=40 width=300 height=71></td></tr></table>
+11/19/2007:12:05:19 PM C:\ghnet_websites\genergyonline.com\pdfMaker\PA\PABT
+11/19/2007:12:05:19 PM http://appserver1.genergy.com/genergy2/invoices/PA_custominvoice.asp?demo=False&l=&y=&building=PABT&pid=108&byear=2007&bperiod=8&logo=pa_logos.jpg&genergy2=False&utilityid=2&detailed=&meterbreakdown=&SJPproperties=&summaryusage=&summarydemand=&textheader=&currBillsPageCount=1&billid=&s=0&e=48
+11/19/2007:12:05:19 PM <APServer><KeepPortDocument>0</KeepPortDocument><GeneralFlags>12314</GeneralFlags><ColorImageFlags>34</ColorImageFlags><GreyImageFlags>34</GreyImageFlags><MonoImageFlags>18</MonoImageFlags><Resolution>     72.00</Resolution><ColorImageResolution>    300.00</ColorImageResolution><GreyImageResolution>     72.00</GreyImageResolution><MonoImageResolution>     72.00</MonoImageResolution><OutputDirectory>C:\ghnet_websites\genergyonline.com\pdfMaker\PA\PABT</OutputDirectory><DefaultPrinter>activePDF Postscript Printer</DefaultPrinter><DefaultQueue>C:\ghnet_websites\genergyonline.com\pdfMaker</DefaultQueue><Domain>.</Domain><PaperSize>5</PaperSize><Orientation>-999</Orientation><PrintQuality>-999</PrintQuality><TrueTypeOption>-999</TrueTypeOption><GraphicBitsPerPixel>24</GraphicBitsPerPixel><GraphicQuality>10</GraphicQuality><PDFMarkCount>0</PDFMarkCount><J2PResolution>0</J2PResolution><J2PWidth>0</J2PWidth><J2PHeight>0</J2PHeight><J2PAutoRotate>0</J2PAutoRotate><J2PPages>0</J2PPages><PDFOption>0</PDFOption><PaperLength>0</PaperLength><PaperWidth>0</PaperWidth><PrintResolution>0</PrintResolution><Linearize>0</Linearize><CanPrint>0</CanPrint><CanEdit>0</CanEdit><CanCopy>0</CanCopy><CanModify>0</CanModify><CanFillInFormFields>0</CanFillInFormFields><CanMakeAccessible>0</CanMakeAccessible><CanAssemble>0</CanAssemble><CanReproduce>0</CanReproduce><KeySize>0</KeySize><EncryptionVersion>0</EncryptionVersion><Scaling>0</Scaling><UseStaticPool>0</UseStaticPool><ReservedPrinterNbr>0</ReservedPrinterNbr><ConcatenateToExisting>0</ConcatenateToExisting><FingerprintPDF>0</FingerprintPDF><JobNumber>0</JobNumber><JobStatus>0</JobStatus><WSPTPDFProcessID>0</WSPTPDFProcessID><SemaphoreHandle>0</SemaphoreHandle><ServerProcessID>0</ServerProcessID><SDID>0</SDID><DoNotOverWrite>0</DoNotOverWrite></APServer>
+11/19/2007:12:12:55 PM <APServer>
+<KeepPortDocument>0</KeepPortDocument>
+<GeneralFlags>12314</GeneralFlags>
+<ColorImageFlags>34</ColorImageFlags>
+<GreyImageFlags>34</GreyImageFlags>
+<MonoImageFlags>18</MonoImageFlags>
+<Resolution>     72.00</Resolution>
+<ColorImageResolution>    300.00</ColorImageResolution>
+<GreyImageResolution>     72.00</GreyImageResolution>
+<MonoImageResolution>     72.00</MonoImageResolution>
+<OutputDirectory>C:\ghnet_websites\genergyonline.com\pdfMaker\PA\PABT</OutputDirectory>
+<OutputQ></OutputQ>
+<DefaultPrinter>activePDF Postscript Printer</DefaultPrinter>
+<DefaultQueue>C:\ghnet_websites\genergyonline.com\pdfMaker</DefaultQueue>
+<UserID></UserID>
+<Domain>.</Domain>
+<Password></Password>
+<PrinterName></PrinterName>
+<PortName>C:\ghnet_websites\genergyonline.com\pdfMaker\ActivePDF-155.PS</PortName>
+<TheUniqueID>2007111912064575874821</TheUniqueID>
+<Nothing></Nothing>
+<PDFTitle></PDFTitle>
+<PDFSubject></PDFSubject>
+<PDFAuthor></PDFAuthor>
+<PDFKeywords></PDFKeywords>
+<PDFProducer></PDFProducer>
+<PDFCreator></PDFCreator>
+<PDFData></PDFData>
+<NewDocumentName></NewDocumentName>
+<PaperSize>5</PaperSize>
+<Orientation>-999</Orientation>
+<PrintQuality>-999</PrintQuality>
+<FormName></FormName>
+<TrueTypeOption>-999</TrueTypeOption>
+<GraphicBitsPerPixel>24</GraphicBitsPerPixel>
+<GraphicQuality>10</GraphicQuality>
+<PDFMarkCount>0</PDFMarkCount>
+<J2PResolution>0</J2PResolution>
+<J2PWidth>0</J2PWidth>
+<J2PHeight>0</J2PHeight>
+<J2PAutoRotate>0</J2PAutoRotate>
+<J2PPaperSize></J2PPaperSize>
+<J2PInputFileName></J2PInputFileName>
+<J2POutputFileName></J2POutputFileName>
+<J2PPSFileName></J2PPSFileName>
+<J2PPages>0</J2PPages>
+<PDFOption>0</PDFOption>
+<PaperLength>0</PaperLength>
+<PaperWidth>0</PaperWidth>
+<PrintResolution>0</PrintResolution>
+<Linearize>0</Linearize>
+<UserPassword></UserPassword>
+<OwnerPassword></OwnerPassword>
+<CanPrint>0</CanPrint>
+<CanEdit>0</CanEdit>
+<CanCopy>0</CanCopy>
+<CanModify>0</CanModify>
+<CanFillInFormFields>0</CanFillInFormFields>
+<CanMakeAccessible>0</CanMakeAccessible>
+<CanAssemble>0</CanAssemble>
+<CanReproduce>0</CanReproduce>
+<KeySize>0</KeySize>
+<EncryptionVersion>0</EncryptionVersion>
+<Scaling>0</Scaling>
+<UseStaticPool>0</UseStaticPool>
+<ReservedPrinterNbr>0</ReservedPrinterNbr>
+<ConcatenateToExisting>0</ConcatenateToExisting>
+<FingerprintPDF>0</FingerprintPDF>
+<JobNumber>1156</JobNumber>
+<JobStatus>0</JobStatus>
+<WSPTPDFProcessID>0</WSPTPDFProcessID>
+<SemaphoreHandle>0</SemaphoreHandle>
+<ServerProcessID>184</ServerProcessID>
+<SDID>0</SDID>
+<DoNotOverWrite>0</DoNotOverWrite>
+<PrinterPoolDeletionTimeout>-1</PrinterPoolDeletionTimeout>
+<FromColorspace></FromColorspace>
+<ToColorspace></ToColorspace>
+</APServer>
+
+11/19/2007:12:12:55 PM 2007111912064575874821.pdf
+11/19/2007:12:12:55 PM PDF Created
+11/19/2007:12:18:44 PM start
+11/19/2007:12:18:44 PM First SQL
+11/19/2007:12:18:44 PM SELECT portfolioid, portfolio, case serverip when '' then '10.0.7.149' else serverip end as ip, bt.name as btid, logo, billurl, location, sm.bldgnum, u.utilitydisplay FROM buildings sm, [10.0.7.149].dbCore.dbo.portfolio p, billtemplates bt, tblutility u WHERE u.utilityid=2 and sm.portfolioid=p.id and bt.id=p.templateid AND sm.id='728'
+11/19/2007:12:18:44 PM SELECT count(distinct lup.leaseutilityid) as billCount  FROM tblleasesutilityprices lup, tblleases l, meters m  WHERE l.billingid=lup.billingid and lup.leaseutilityid=m.leaseutilityid   and m.nobill=0 and online=1 and l.leaseexpired=0 and l.bldgnum='JFK' and lup.utility=2
+11/19/2007:12:18:44 PM Creating PDF
+11/19/2007:12:18:44 PM C:\ghnet_websites\genergyonline.com\pdfMaker\PA\JFK
+11/19/2007:12:18:44 PM C:\ghnet_websites\appserver1\genergy2\G1ConsolePDFs

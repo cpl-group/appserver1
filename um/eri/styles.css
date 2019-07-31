@@ -1,0 +1,14 @@
+body, p, td  { font-family:Arial,Helvetica,sans-serif; font-size:smaller; }
+input, textarea,select { font-family:Arial,Helvetica,sans-serif; font-size:9pt; }
+.standard { font-family:Arial,Helvetica,sans-serif;font-size:smaller; }
+.standardheader { font-family:Arial,Helvetica,sans-serif;font-size:smaller;font-weight:bold;color:#ffffff; }
+.bottomline { border-bottom:1px solid #eeeeee; }
+.floorlink { font-family:Arial,Helvetica,sans-serif;font-size:smaller; color:#0099ff; }
+a.floorlink:hover { color:lightgreen; }
+.shrunkenheader { font-family:Arial,Helvetica,sans-serif;font-size:7pt;font-weight:bold; }
+a.breadcrumb { font-family:Arial,Helvetica,sans-serif;font-size:smaller; color:#ffffff; }
+a.breadcrumb:hover { color:#ccf3cc; }
+a { color:#006699; }
+body  { margin:0px; }
+
+.tblunderline { border-bottom:1px solid #dddddd; }

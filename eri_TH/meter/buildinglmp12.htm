@@ -1,0 +1,241 @@
+
+<body bgcolor="#FFFFFF"><b>
+<br>
+<div align='right'><a href=../../cgi-bin/meterbuff.cgi?date=12/06/2001&lid=3254&bldg=33&dsn=sqlserverg1&img=3254_12062001_0100_2400_60_bar.jpeg&user=>Printer 
+Ready</a></div></right><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Genergy.com</title>
+
+<script>
+function navigate(direc, bldg, lid, dsn){
+        datevalue=document.forms[0].datefield.value
+        var user=document.forms[0].user.value
+   	var currdate = new Date(datevalue)
+	if (direc == "<-") {
+	    currdate=new Date(currdate).valueOf() - (1 * 86400000)
+	}else{
+	    currdate=new Date(currdate).valueOf() + (1 * 90000000)
+	}
+	currdate = new Date(currdate)
+	currdate = (currdate.getMonth() + 1) + "/" + currdate.getDate() + "/" + currdate.getFullYear()
+        var script = document.forms[0].value;
+        var graph = document.forms[0].GRAPH.value
+	var temp = script+"?datefield=" + currdate + 
+"&start=01:00&end=24:00&interval=60&bldg=" + bldg + "&lid="+ 
+lid+"&dsn="+dsn+"&graph="+graph+"&user="+user
+	document.location.href=temp;
+}
+</script>
+</head><style type="text/css">
+<!--
+BODY {
+SCROLLBAR-FACE-COLOR: #0099FF;
+SCROLLBAR-HIGHLIGHT-COLOR: #0099FF;
+SCROLLBAR-SHADOW-COLOR: #333333;
+SCROLLBAR-3DLIGHT-COLOR: #333333;
+SCROLLBAR-ARROW-COLOR: #333333;
+SCROLLBAR-TRACK-COLOR: #333333;
+SCROLLBAR-DARKSHADOW-COLOR: #333333;
+}
+-->
+</style>
+
+<meta http-equiv="refresh" content="1600">
+<body  bgcolor="#FFFFFF" >
+<div align="center"><br>
+  <font face="Arial, Helvetica, sans-serif"><b><font size="2"></font></b></font><BR>
+</div>
+<form name="lmp" method="post" action="meterstart.cgi" value="meterstart.cgi">
+<center>
+    <p> 
+      <input type="button" name="Button2" value="<-">
+	        &nbsp<input type="button" name="Button32" value="->">
+    </p>
+  </center> 
+  <table width="100%" align="center" border="0" cellpadding="0">
+    <tr> 
+    <td width="27%" > 
+      <div align="CENTER">
+<Map Name=1011982922>
+	<Area Shape=rect Coords="71, 177, 74, 238" Href="javascript:;" Title="769.88 KW" Alt="769.88 KW" onMouseOver="window.status='769.88 KW'; return true;" onMouseOut="window.status=''; return true;">
+	<Area Shape=rect Coords="88, 177, 91, 238" Href="javascript:;" Title="769.88 KW" Alt="769.88 KW" onMouseOver="window.status='769.88 KW'; return true;" onMouseOut="window.status=''; return true;">
+	<Area Shape=rect Coords="105, 166, 108, 238" Href="javascript:;" Title="898.2 KW" Alt="898.2 KW" onMouseOver="window.status='898.2 KW'; return true;" onMouseOut="window.status=''; return true;">
+	<Area Shape=rect Coords="122, 177, 125, 238" Href="javascript:;" Title="769.88 KW" Alt="769.88 KW" onMouseOver="window.status='769.88 KW'; return true;" onMouseOut="window.status=''; return true;">
+	<Area Shape=rect Coords="139, 166, 142, 238" Href="javascript:;" Title="898.2 KW" Alt="898.2 KW" onMouseOver="window.status='898.2 KW'; return true;" onMouseOut="window.status=''; return true;">
+	<Area Shape=rect Coords="156, 166, 159, 238" Href="javascript:;" Title="898.2 KW" Alt="898.2 KW" onMouseOver="window.status='898.2 KW'; return true;" onMouseOut="window.status=''; return true;">
+	<Area Shape=rect Coords="173, 136, 176, 238" Href="javascript:;" Title="1283.16 KW" Alt="1283.16 KW" onMouseOver="window.status='1283.16 KW'; return true;" onMouseOut="window.status=''; return true;">
+	<Area Shape=rect Coords="190, 105, 193, 238" Href="javascript:;" Title="1668.12 KW" Alt="1668.12 KW" onMouseOver="window.status='1668.12 KW'; return true;" onMouseOut="window.status=''; return true;">
+	<Area Shape=rect Coords="207, 84, 210, 238" Href="javascript:;" Title="1924.72 KW" Alt="1924.72 KW" onMouseOver="window.status='1924.72 KW'; return true;" onMouseOut="window.status=''; return true;">
+	<Area Shape=rect Coords="224, 84, 227, 238" Href="javascript:;" Title="1924.72 KW" Alt="1924.72 KW" onMouseOver="window.status='1924.72 KW'; return true;" onMouseOut="window.status=''; return true;">
+	<Area Shape=rect Coords="241, 54, 244, 238" Href="javascript:;" Title="2309.68 KW" Alt="2309.68 KW" onMouseOver="window.status='2309.68 KW'; return true;" onMouseOut="window.status=''; return true;">
+	<Area Shape=rect Coords="258, 54, 261, 238" Href="javascript:;" Title="2309.68 KW" Alt="2309.68 KW" onMouseOver="window.status='2309.68 KW'; return true;" onMouseOut="window.status=''; return true;">
+	<Area Shape=rect Coords="275, 54, 278, 238" Href="javascript:;" Title="2309.68 KW" Alt="2309.68 KW" onMouseOver="window.status='2309.68 KW'; return true;" onMouseOut="window.status=''; return true;">
+	<Area Shape=rect Coords="292, 54, 295, 238" Href="javascript:;" Title="2309.68 KW" Alt="2309.68 KW" onMouseOver="window.status='2309.68 KW'; return true;" onMouseOut="window.status=''; return true;">
+	<Area Shape=rect Coords="309, 43, 312, 238" Href="javascript:;" Title="2438 KW" Alt="2438 KW" onMouseOver="window.status='2438 KW'; return true;" onMouseOut="window.status=''; return true;">
+	<Area Shape=rect Coords="326, 43, 329, 238" Href="javascript:;" Title="2438 KW" Alt="2438 KW" onMouseOver="window.status='2438 KW'; return true;" onMouseOut="window.status=''; return true;">
+	<Area Shape=rect Coords="343, 54, 346, 238" Href="javascript:;" Title="2309.68 KW" Alt="2309.68 KW" onMouseOver="window.status='2309.68 KW'; return true;" onMouseOut="window.status=''; return true;">
+	<Area Shape=rect Coords="360, 115, 363, 238" Href="javascript:;" Title="1539.8 KW" Alt="1539.8 KW" onMouseOver="window.status='1539.8 KW'; return true;" onMouseOut="window.status=''; return true;">
+	<Area Shape=rect Coords="377, 136, 380, 238" Href="javascript:;" Title="1283.16 KW" Alt="1283.16 KW" onMouseOver="window.status='1283.16 KW'; return true;" onMouseOut="window.status=''; return true;">
+	<Area Shape=rect Coords="394, 146, 397, 238" Href="javascript:;" Title="1154.84 KW" Alt="1154.84 KW" onMouseOver="window.status='1154.84 KW'; return true;" onMouseOut="window.status=''; return true;">
+	<Area Shape=rect Coords="411, 146, 414, 238" Href="javascript:;" Title="1154.84 KW" Alt="1154.84 KW" onMouseOver="window.status='1154.84 KW'; return true;" onMouseOut="window.status=''; return true;">
+	<Area Shape=rect Coords="428, 156, 431, 238" Href="javascript:;" Title="1026.52 KW" Alt="1026.52 KW" onMouseOver="window.status='1026.52 KW'; return true;" onMouseOut="window.status=''; return true;">
+	<Area Shape=rect Coords="445, 156, 448, 238" Href="javascript:;" Title="1026.52 KW" Alt="1026.52 KW" onMouseOver="window.status='1026.52 KW'; return true;" onMouseOut="window.status=''; return true;">
+	<Area Shape=rect Coords="462, 166, 465, 238" Href="javascript:;" Title="898.2 KW" Alt="898.2 KW" onMouseOver="window.status='898.2 KW'; return true;" onMouseOut="window.status=''; return true;">
+	<Area Shape=rect Coords="207, 291, 219, 299" Href="javascript:;" Title="" Alt="" onMouseOver="window.status=''; return true;" onMouseOut="window.status=''; return true;">
+</Map>
+          <Img UseMap=#1011982922 Src="3254_12062001_0100_2400_60_bar.jpg" border=0 Height=300 Width=500> 
+        </div>
+    
+  </tr>
+</table> 
+  
+  <table border=1 width="100%" align=center>
+    <tr> 
+    <td width="25%" > 
+      <div align="center"><font size="2"><b><i><font face="Arial, Helvetica, sans-serif">Date</font></i></b></font></div>
+    </td>
+    <td width="25%" > 
+      <div> 
+        <center>
+          <font size="2"><b><i><font face="Arial, Helvetica, sans-serif">Start 
+          Time </font> </i> </b> </font> 
+        </center>
+      </div>
+    </td>
+    <td width="25%" > 
+      <div align="center"><font size="2"><b><i><font face="Arial, Helvetica, sans-serif">End 
+        Time</font></i></b></font></div>
+    </td>
+    <TD width="25%" > 
+      <DIV align="center"><font size="2"><b><i><font face="Arial, Helvetica, sans-serif">Interval</font></i></b></font></div>
+    </TD>
+    <td width="25%" > 
+      <div align="center"><font size="2"><b><i><font face="Arial, Helvetica, sans-serif">Graph 
+        Style</font></i></b></font></div>
+    </td>
+  </tr>
+    <tr valign="top"> 
+      <td width="25%"> 
+        <div align="center">
+          <p>
+<input type=text name=datefield value=12/06/2001>            <a href="#" onClick="window.datefield = document.lmp.datefield;calendar = window.open('http://www.genergy.com/icons/calendar.html','cal','WIDTH=200,HEIGHT=250');return false"><img src="http://www.genergy.com/icons/calendarbutton.gif" border=0 width="20" height="20"></a> 
+          </p>
+		  <input type="hidden" name="prev" value="prev">
+ 		  <input type="hidden" name="next" value="next">
+		  <input type=hidden name=lid
+ value=3254>		  <input type=hidden name=bldg
+ value=33>		  <input type=hidden name=dsn
+ value=sqlserverg1><input type=hidden name=GRAPH value=bars3d><input type=hidden name=user value=>        </div>
+      </td>
+      <td width="25%"> 
+        <div align="center"> 
+        <select name=start>
+          <option>01:00</option>
+          <option>02:00</option>
+          <option>03:00</option>
+          <option>04:00</option>
+          <option>05:00</option>
+          <option>06:00</option>
+          <option>07:00</option>
+          <option>08:00</option>
+          <option>09:00</option>
+          <option>10:00</option>
+          <option>11:00</option>
+          <option>12:00</option>
+          <option>13:00</option>
+          <option>14:00</option>
+          <option>15:00</option>
+          <option>16:00</option>
+          <option>17:00</option>
+          <option>18:00</option>
+          <option>19:00</option>
+          <option>20:00</option>
+          <option>21:00</option>
+          <option>22:00</option>
+          <option>23:00</option>
+          <option>24:00</option>
+        </select>
+      </div>
+    </td>
+      <td width="25%"> 
+        <div align="center"> 
+        <select name=end>
+          <option>24:00</option>
+          <option>23:00</option>
+          <option>22:00</option>
+          <option>21:00</option>
+          <option>20:00</option>
+          <option>19:00</option>
+          <option>18:00</option>
+          <option>17:00</option>
+          <option>16:00</option>
+          <option>15:00</option>
+          <option>14:00</option>
+          <option>13:00</option>
+          <option>12:00</option>
+          <option>11:00</option>
+          <option>10:00</option>
+          <option>09:00</option>
+          <option>08:00</option>
+          <option>07:00</option>
+          <option>06:00</option>
+          <option>05:00</option>
+          <option>04:00</option>
+          <option>03:00</option>
+          <option>02:00</option>
+          <option>01:00</option>
+        </select>
+      </div>
+    </td>
+      <TD width="25%"> 
+        <DIV align="center"> 
+        <SELECT name=interval>
+          <OPTION>60</option>
+          <OPTION>30</option>
+          <OPTION>15</option>
+        </SELECT>
+        </DIV>
+      </TD>
+      <td width="25%" align=center> 
+        <p> 
+        <input name=graph type=radio value=lines3d>
+        Line</p>
+      <p> 
+        <input name=graph type=radio value=bars3d checked>
+          Bar</p>
+    </td>
+  </tr>
+  <div align="center"> 
+    <p>
+    <tr> 
+      <td colspan=3 align=center> 
+          <input type=button value=Submit name="Button">
+      </td>
+      <td colspan=2 align=center> 
+          <input type=button value=Reset name="Button">
+      </td>
+    </tr>
+    <p></p>
+  </div>
+
+</table>
+</form>
+<center>
+<p align='center'><small><b><font face='Arial, Helvetica, sans-serif'>PeakDemand(s),Consumption Table In Period: 12</font></b></small></p><table width=100% border=1>  <tr>    <td>Meter</td>    <td>Date</td>    <td>Time</td>    <td>KW</td>    <td>KWH</td>  </tr>  <tr>    <td>330 Madison Av</td><td>Dec 06 2001</td><td>1445</td>    <td> 2438 </td>    <td> 778314 </td>  </tr></table><p align='center'><small><b><font face='Arial, Helvetica, sans-serif'>PeakDemand(s)/Consumption History Table</font></b></small></p><table width=100% border=1>  <tr>    <td>Period</td>    <td>Date</td>    <td>Time</td>    <td>KW</td>    <td>KWH</td>  </tr>  <tr>    
+      <td>11</td>
+      <td>Nov 01 2001</td><td>1530</td>    <td> 2566 </td>    <td> 880304 </td>  </tr>  <tr>    
+      <td>10</td>
+      <td>Oct 10 2001</td><td>1545</td>    <td> 2438 </td>    <td> 808962 </td>  </tr>  <tr>    
+      <td>9</td>
+      <td>Sep 04 2001</td><td>1030</td>    <td> 2566 </td>    <td> 423023 </td>  </tr>  <tr>    
+      <td>8</td>
+      <td>Aug 06 2001</td><td>1215</td>    <td> 2695 </td>    <td> 1047470 </td>  </tr>  <tr>    
+      <td>7</td>
+      <td>Jul 25 2001</td><td>0945</td>    <td> 2695 </td>    <td> 90848 </td>  </tr>  <tr>    <td>6</td><td>&nbsp;</td><td>&nbsp;</td>    <td>&nbsp;  </td>    <td> 0 </td>  </tr>  <tr>    <td>5</td><td>&nbsp;</td><td>&nbsp;</td>    <td>&nbsp;  </td>    <td> 0 </td>  </tr>  <tr>    <td>4</td><td>&nbsp;</td><td>&nbsp;</td>    <td>&nbsp;  </td>    <td> 0 </td>  </tr>  <tr>    <td>3</td><td>&nbsp;</td><td>&nbsp;</td>    <td>&nbsp;  </td>    <td> 0 </td>  </tr>  <tr>    <td>2</td><td>&nbsp;</td><td>&nbsp;</td>    <td>&nbsp;  </td>    <td> 0 </td>  </tr>  <tr>    <td>1</td><td>&nbsp;</td><td>&nbsp;</td>    <td>&nbsp;  </td>    <td> 0 </td>  </tr>  <tr>    <td>12</td><td>&nbsp;</td><td>&nbsp;</td>    <td>&nbsp;  </td>    <td> 0 </td>  </tr></table></center><br><br>
+</body>
+</html></center></center>
+</center></center></center></center></center></center></center>
+</center>
+</center></center>
+</center>

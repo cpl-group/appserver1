@@ -1,0 +1,22 @@
+<script language="vbscript" runat=server>
+
+Sub Application_OnStart
+	Application("AllowAdds")="No"
+	Application("NumAttempts")=3
+End Sub
+
+Sub Application_OnEnd
+
+    	Set cnn1 = Server.CreateObject("ADODB.Connection")
+
+	cnn1.Open "driver={SQL Server};server=10.0.7.16;uid=genergy1;pwd=genergy1;database=security;"
+
+	strsql = "UPDATE employees SET status=0 where login = '" & Session("login") & "'"
+
+	cnn1.execute strsql
+
+	set cnn1 = nothing
+	Session.Abandon
+end sub
+
+</script>

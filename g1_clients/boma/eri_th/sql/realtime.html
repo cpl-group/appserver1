@@ -1,0 +1,406 @@
+<HTML>
+
+<HEAD>
+<TITLE></TITLE>
+<script>
+<!--
+
+
+//enter refresh time in "minutes:seconds" Minutes should range from 0 to inifinity. Seconds should range from 0 to 59
+var limit="0:30"
+
+if (document.images){
+var parselimit=limit.split(":")
+parselimit=parselimit[0]*60+parselimit[1]*1
+}
+function beginrefresh(){
+if (!document.images)
+return
+if (parselimit==1)
+window.location.reload()
+else{ 
+parselimit-=1
+curmin=Math.floor(parselimit/60)
+cursec=parselimit%60
+if (curmin!=0)
+curtime=curmin+" minutes and "+cursec+" seconds left until page refresh!"
+else
+curtime=cursec+" seconds left until page refresh!"
+window.status=curtime
+setTimeout("beginrefresh()",1000)
+}
+}
+
+window.onload=beginrefresh
+//-->
+</script>
+</HEAD>
+<BODY bgcolor="#FFFFFF">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#0099FF" height="22">
+  <tr> 
+    <td>
+      <div align="center"><font face="Arial, Helvetica, sans-serif"><b>Meter Details</b></font></div>
+    </td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<table width="50%" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr> 
+    <td><font face="Arial" size="3">Date</font></td>
+    <td><font face="Arial" size="3">Time</font></td>
+  </tr>
+  <tr> 
+  
+
+    <td><font face="Arial" size="3"> 
+      2001-12-11 00:00:00</font></td>
+    <td><font face="Arial" size="3"> 
+      112200</font></td>
+  </tr>
+</table>
+<p><font face="Arial" size="3">&nbsp;</font></p>
+<table width="59%" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr> 
+    <td width="21%"><font face="Arial" size="3">VOLT A</font></td>
+    <td width="24%" align="right"><font face="Arial" size="2"> 
+      120.5</font></td>
+    <td width="17%"></td>
+    <td width="20%"><font face="Arial" size="3">VOLT A-B</font></td>
+    <td width="38%" align="right"><font face="Arial" size="2">209.0</font></td>
+  </tr>
+  <tr> 
+    <td width="21%"><font face="Arial" size="3"><b>AMP A</b></font></td>
+    <td width="24%" align="right"><font face="Arial" size="2"> 
+      30.829999999999998</font></td>
+    <td width="17%"></td>
+    <td width="20%"><font face="Arial" size="3"><b>KW A</b></font></td>
+    <td width="38%" align="right"><font face="Arial" size="2">3.5510000000000002</font></td>
+  </tr>
+  <tr> 
+    <td width="21%"><font face="Arial" size="3">KVAR A</font></td>
+    <td width="24%" align="right"><font face="Arial" size="2"> 
+      0.33100000000000002</font></td>
+    <td width="17%"></td>
+    <td width="20%"><font face="Arial" size="3">PF A</font></td>
+    <td width="38%" align="right"><font face="Arial" size="2">0.94999999999999996</font></td>
+  </tr>
+  <tr> 
+    <td width="21%"><font face="Arial" size="3">VThd A&nbsp; %</font></td>
+    <td width="24%" align="right"><font face="Arial" size="2"> 
+      2.8999999999999999</font></td>
+    <td width="17%"></td>
+    <td width="20%"><font face="Arial" size="3">AThd A %</font></td>
+    <td width="38%" align="right"><font face="Arial" size="2">25.399999999999999</font></td>
+  </tr>
+  <tr> 
+    <td width="21%"></td>
+    <td width="24%" align="right"></td>
+    <td width="17%"></td>
+    <td width="20%"></td>
+    <td width="38%" align="right"></td>
+  </tr>
+  <tr> 
+    <td width="21%"><font face="Arial" size="3">VOLT B</font></td>
+    <td width="24%" align="right"><font face="Arial" size="2"> 
+      120.3</font></td>
+    <td width="17%"></td>
+    <td width="20%"><font face="Arial" size="3">VOLT B-C</font></td>
+    <td width="38%" align="right"><font face="Arial" size="2">206.40000000000001</font></td>
+  </tr>
+  <tr> 
+    <td width="21%"><font face="Arial" size="3"><b>AMP B</b></font></td>
+    <td width="24%" align="right"><font face="Arial" size="2"> 
+      25.213999999999999</font></td>
+    <td width="17%"></td>
+    <td width="20%"><font face="Arial" size="3"><b>KW B</b></font></td>
+    <td width="38%" align="right"><font face="Arial" size="2">2.7730000000000001</font></td>
+  </tr>
+  <tr> 
+    <td width="21%"><font face="Arial" size="3">KVAR B</font></td>
+    <td width="24%" align="right"><font face="Arial" size="2"> 
+      0.27500000000000002</font></td>
+    <td width="17%"></td>
+    <td width="20%"><font face="Arial" size="3">PF B</font></td>
+    <td width="38%" align="right"><font face="Arial" size="2">0.91000000000000003</font></td>
+  </tr>
+  <tr> 
+    <td width="21%"><font face="Arial" size="3">VThd B&nbsp; %</font></td>
+    <td width="24%" align="right"><font face="Arial" size="2"> 
+      2.7999999999999998</font></td>
+    <td width="17%"></td>
+    <td width="20%"><font face="Arial" size="3">AThd B %</font></td>
+    <td width="38%" align="right"><font face="Arial" size="2">37.0</font></td>
+  </tr>
+  <tr> 
+    <td width="21%"></td>
+    <td width="24%" align="right"></td>
+    <td width="17%"></td>
+    <td width="20%"></td>
+    <td width="38%" align="right"></td>
+  </tr>
+  <tr> 
+    <td width="21%"><font face="Arial" size="3">VOLT C</font></td>
+    <td width="24%" align="right"><font face="Arial" size="2"> 
+      119.2</font></td>
+    <td width="17%"></td>
+    <td width="20%"><font face="Arial" size="3">VOLT C-A</font></td>
+    <td width="38%" align="right"><font face="Arial" size="2">207.69999999999999</font></td>
+  </tr>
+  <tr> 
+    <td width="21%"><font face="Arial" size="3"><b>AMP C</b></font></td>
+    <td width="24%" align="right"><font face="Arial" size="2"> 
+      22.545000000000002</font></td>
+    <td width="17%"></td>
+    <td width="20%"><font face="Arial" size="3"><b>KW C</b></font></td>
+    <td width="38%" align="right"><font face="Arial" size="2">2.5939999999999999</font></td>
+  </tr>
+  <tr> 
+    <td width="21%"><font face="Arial" size="3">KVAR C</font></td>
+    <td width="24%" align="right"><font face="Arial" size="2"> 
+      9.7000000000000003E-2</font></td>
+    <td width="17%"></td>
+    <td width="20%"><font face="Arial" size="3">PF C</font></td>
+    <td width="38%" align="right"><font face="Arial" size="2">0.95999999999999996</font></td>
+  </tr>
+  <tr> 
+    <td width="21%"><font face="Arial" size="3">VThd C&nbsp; %</font></td>
+    <td width="24%" align="right"><font face="Arial" size="2"> 
+      2.8999999999999999</font></td>
+    <td width="17%"></td>
+    <td width="20%"><font face="Arial" size="3">AThd C %</font></td>
+    <td width="38%" align="right"><font face="Arial" size="2">20.800000000000001</font></td>
+  </tr>
+  <tr> 
+    <td width="21%"></td>
+    <td width="24%" align="right"></td>
+    <td width="17%"></td>
+    <td width="20%"></td>
+    <td width="38%" align="right"></td>
+  </tr>
+  <tr> 
+    <td width="21%"><font face="Arial" size="3">KW ABC</font></td>
+    <td width="24%" align="right"><font face="Arial" size="2"> 
+      8.9169999999999998</font></td>
+    <td width="17%"></td>
+    <td width="20%"><font face="Arial" size="3">KVARL ABC</font></td>
+    <td width="38%" align="right"><font face="Arial" size="2">0.70299999999999996</font></td>
+  </tr>
+  <tr> 
+    <td width="21%"><font face="Arial" size="3">KVARC ABC</font></td>
+    <td width="24%" align="right"><font face="Arial" size="2"> 
+      0.0</font></td>
+    <td width="17%"></td>
+    <td width="20%"><font face="Arial" size="3"><b>PF ABC</b></font></td>
+    <td width="38%" align="right"><font face="Arial" size="2">0.94999999999999996</font></td>
+  </tr>
+  <tr> 
+    <td width="21%"><font face="Arial" size="3">COS ABC</font></td>
+    <td width="24%" align="right"><font face="Arial" size="2"> 
+      1.0</font></td>
+    <td width="17%"></td>
+    <td width="20%"><font face="Arial" size="3">Freq. Hz.</font></td>
+    <td width="38%" align="right"><font face="Arial" size="2">60.0</font></td>
+  </tr>
+  <tr> 
+    <td width="21%"><font face="Arial" size="3"><b>KWH ABC</b></font></td>
+    <td width="24%" align="right"><font face="Arial" size="2"> 
+      13684.064</font></td>
+    <td width="17%"></td>
+    <td width="20%"><font face="Arial" size="3">KVARLH ABC</font></td>
+    <td width="38%" align="right"><font face="Arial" size="2">3077.3629999999998</font></td>
+  </tr>
+  <tr> 
+    <td width="18%"><font face="Arial" size="3">KVARCH ABC</font></td>
+    <td width="24%" align="right"><font face="Arial" size="2"> 
+      73.420000000000002</font></td>
+    <td width="17%"></td>
+    <td width="20%"><font face="Arial" size="3">KVA&nbsp;ABC</font></td>
+    <td width="38%" align="right"><font face="Arial" size="2">9.2970000000000006</font></td>
+  </tr>
+  <tr> 
+    <td width="18%"></td>
+    <td width="24%" align="right"></td>
+    <td width="17%"></td>
+    <td width="20%"><font face="Arial" size="3"><b>DEMAND</b></font></td>
+    <td width="38%" align="right"><font face="Arial" size="2">11.699</font></td>
+  </tr>
+  
+    <td><font face="Arial" size="3"> 
+      2001-12-11 00:00:00</font></td>
+    <td><font face="Arial" size="3"> 
+      112200</font></td>
+  </tr>
+</table>
+<p><font face="Arial" size="3">&nbsp;</font></p>
+<table width="59%" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr> 
+    <td width="21%"><font face="Arial" size="3">VOLT A</font></td>
+    <td width="24%" align="right"><font face="Arial" size="2"> 
+      120.8</font></td>
+    <td width="17%"></td>
+    <td width="20%"><font face="Arial" size="3">VOLT A-B</font></td>
+    <td width="38%" align="right"><font face="Arial" size="2">209.40000000000001</font></td>
+  </tr>
+  <tr> 
+    <td width="21%"><font face="Arial" size="3"><b>AMP A</b></font></td>
+    <td width="24%" align="right"><font face="Arial" size="2"> 
+      27.989000000000001</font></td>
+    <td width="17%"></td>
+    <td width="20%"><font face="Arial" size="3"><b>KW A</b></font></td>
+    <td width="38%" align="right"><font face="Arial" size="2">3.2040000000000002</font></td>
+  </tr>
+  <tr> 
+    <td width="21%"><font face="Arial" size="3">KVAR A</font></td>
+    <td width="24%" align="right"><font face="Arial" size="2"> 
+      0.34200000000000003</font></td>
+    <td width="17%"></td>
+    <td width="20%"><font face="Arial" size="3">PF A</font></td>
+    <td width="38%" align="right"><font face="Arial" size="2">0.93999999999999995</font></td>
+  </tr>
+  <tr> 
+    <td width="21%"><font face="Arial" size="3">VThd A&nbsp; %</font></td>
+    <td width="24%" align="right"><font face="Arial" size="2"> 
+      2.7999999999999998</font></td>
+    <td width="17%"></td>
+    <td width="20%"><font face="Arial" size="3">AThd A %</font></td>
+    <td width="38%" align="right"><font face="Arial" size="2">27.899999999999999</font></td>
+  </tr>
+  <tr> 
+    <td width="21%"></td>
+    <td width="24%" align="right"></td>
+    <td width="17%"></td>
+    <td width="20%"></td>
+    <td width="38%" align="right"></td>
+  </tr>
+  <tr> 
+    <td width="21%"><font face="Arial" size="3">VOLT B</font></td>
+    <td width="24%" align="right"><font face="Arial" size="2"> 
+      120.5</font></td>
+    <td width="17%"></td>
+    <td width="20%"><font face="Arial" size="3">VOLT B-C</font></td>
+    <td width="38%" align="right"><font face="Arial" size="2">206.90000000000001</font></td>
+  </tr>
+  <tr> 
+    <td width="21%"><font face="Arial" size="3"><b>AMP B</b></font></td>
+    <td width="24%" align="right"><font face="Arial" size="2"> 
+      24.277000000000001</font></td>
+    <td width="17%"></td>
+    <td width="20%"><font face="Arial" size="3"><b>KW B</b></font></td>
+    <td width="38%" align="right"><font face="Arial" size="2">2.6779999999999999</font></td>
+  </tr>
+  <tr> 
+    <td width="21%"><font face="Arial" size="3">KVAR B</font></td>
+    <td width="24%" align="right"><font face="Arial" size="2"> 
+      0.108</font></td>
+    <td width="17%"></td>
+    <td width="20%"><font face="Arial" size="3">PF B</font></td>
+    <td width="38%" align="right"><font face="Arial" size="2">0.91000000000000003</font></td>
+  </tr>
+  <tr> 
+    <td width="21%"><font face="Arial" size="3">VThd B&nbsp; %</font></td>
+    <td width="24%" align="right"><font face="Arial" size="2"> 
+      2.7999999999999998</font></td>
+    <td width="17%"></td>
+    <td width="20%"><font face="Arial" size="3">AThd B %</font></td>
+    <td width="38%" align="right"><font face="Arial" size="2">38.5</font></td>
+  </tr>
+  <tr> 
+    <td width="21%"></td>
+    <td width="24%" align="right"></td>
+    <td width="17%"></td>
+    <td width="20%"></td>
+    <td width="38%" align="right"></td>
+  </tr>
+  <tr> 
+    <td width="21%"><font face="Arial" size="3">VOLT C</font></td>
+    <td width="24%" align="right"><font face="Arial" size="2"> 
+      119.40000000000001</font></td>
+    <td width="17%"></td>
+    <td width="20%"><font face="Arial" size="3">VOLT C-A</font></td>
+    <td width="38%" align="right"><font face="Arial" size="2">208.09999999999999</font></td>
+  </tr>
+  <tr> 
+    <td width="21%"><font face="Arial" size="3"><b>AMP C</b></font></td>
+    <td width="24%" align="right"><font face="Arial" size="2"> 
+      20.925999999999998</font></td>
+    <td width="17%"></td>
+    <td width="20%"><font face="Arial" size="3"><b>KW C</b></font></td>
+    <td width="38%" align="right"><font face="Arial" size="2">2.4079999999999999</font></td>
+  </tr>
+  <tr> 
+    <td width="21%"><font face="Arial" size="3">KVAR C</font></td>
+    <td width="24%" align="right"><font face="Arial" size="2"> 
+      8.0000000000000002E-2</font></td>
+    <td width="17%"></td>
+    <td width="20%"><font face="Arial" size="3">PF C</font></td>
+    <td width="38%" align="right"><font face="Arial" size="2">0.95999999999999996</font></td>
+  </tr>
+  <tr> 
+    <td width="21%"><font face="Arial" size="3">VThd C&nbsp; %</font></td>
+    <td width="24%" align="right"><font face="Arial" size="2"> 
+      2.7999999999999998</font></td>
+    <td width="17%"></td>
+    <td width="20%"><font face="Arial" size="3">AThd C %</font></td>
+    <td width="38%" align="right"><font face="Arial" size="2">22.899999999999999</font></td>
+  </tr>
+  <tr> 
+    <td width="21%"></td>
+    <td width="24%" align="right"></td>
+    <td width="17%"></td>
+    <td width="20%"></td>
+    <td width="38%" align="right"></td>
+  </tr>
+  <tr> 
+    <td width="21%"><font face="Arial" size="3">KW ABC</font></td>
+    <td width="24%" align="right"><font face="Arial" size="2"> 
+      8.2899999999999991</font></td>
+    <td width="17%"></td>
+    <td width="20%"><font face="Arial" size="3">KVARL ABC</font></td>
+    <td width="38%" align="right"><font face="Arial" size="2">0.53000000000000003</font></td>
+  </tr>
+  <tr> 
+    <td width="21%"><font face="Arial" size="3">KVARC ABC</font></td>
+    <td width="24%" align="right"><font face="Arial" size="2"> 
+      0.0</font></td>
+    <td width="17%"></td>
+    <td width="20%"><font face="Arial" size="3"><b>PF ABC</b></font></td>
+    <td width="38%" align="right"><font face="Arial" size="2">0.95999999999999996</font></td>
+  </tr>
+  <tr> 
+    <td width="21%"><font face="Arial" size="3">COS ABC</font></td>
+    <td width="24%" align="right"><font face="Arial" size="2"> 
+      1.0</font></td>
+    <td width="17%"></td>
+    <td width="20%"><font face="Arial" size="3">Freq. Hz.</font></td>
+    <td width="38%" align="right"><font face="Arial" size="2">60.0</font></td>
+  </tr>
+  <tr> 
+    <td width="21%"><font face="Arial" size="3"><b>KWH ABC</b></font></td>
+    <td width="24%" align="right"><font face="Arial" size="2"> 
+      13684.203</font></td>
+    <td width="17%"></td>
+    <td width="20%"><font face="Arial" size="3">KVARLH ABC</font></td>
+    <td width="38%" align="right"><font face="Arial" size="2">3077.3710000000001</font></td>
+  </tr>
+  <tr> 
+    <td width="18%"><font face="Arial" size="3">KVARCH ABC</font></td>
+    <td width="24%" align="right"><font face="Arial" size="2"> 
+      73.420000000000002</font></td>
+    <td width="17%"></td>
+    <td width="20%"><font face="Arial" size="3">KVA&nbsp;ABC</font></td>
+    <td width="38%" align="right"><font face="Arial" size="2">8.6430000000000007</font></td>
+  </tr>
+  <tr> 
+    <td width="18%"></td>
+    <td width="24%" align="right"></td>
+    <td width="17%"></td>
+    <td width="20%"><font face="Arial" size="3"><b>DEMAND</b></font></td>
+    <td width="38%" align="right"><font face="Arial" size="2">11.656000000000001</font></td>
+  </tr>
+  
+</table>
+<H1><font face="Arial" size="3">&nbsp;</font></H1>
+<P>
+</BODY>
+</HTML>
+

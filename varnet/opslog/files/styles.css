@@ -1,0 +1,137 @@
+BODY
+{
+    FONT-SIZE: 10px;
+    COLOR: white;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Arial;
+    BACKGROUND: #FFFFFF;
+    FONT-VARIANT: normal;
+    TEXT-DECORATION: none;
+    scrollbar-3d-light-color:#535CF6;
+    scrollbar-arrow-color:#535CF6;
+    scrollbar-base-color:black;
+    scrollbar-dark-shadow-color:#333333;
+    scrollbar-face-color:#333333;
+    scrollbar-highlight-color:#FFFFFF;
+    scrollbar-shadow-color:#FFFFFF;
+}
+A
+{
+    COLOR: #FFFFFF;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Arial;
+    BACKGROUND-COLOR: transparent;
+    FONT-VARIANT: normal;
+    TEXT-DECORATION: none;
+}
+A:hover
+{
+    COLOR: #940302;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Arial;
+    BACKGROUND-COLOR: transparent;
+    FONT-VARIANT: normal;
+    TEXT-DECORATION: underline;
+}
+A:visited
+{
+    COLOR: #FFFFFF;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Arial;
+    BACKGROUND-COLOR: transparent;
+    FONT-VARIANT: normal;
+    TEXT-DECORATION: none
+}
+A:visited:hover
+{
+    COLOR: #940302;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Arial;
+    BACKGROUND-COLOR: transparent;
+    FONT-VARIANT: normal;
+    TEXT-DECORATION: underline;
+}
+A:active
+{
+    COLOR: #535CF6;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Arial;
+    BACKGROUND-COLOR: transparent;
+    FONT-VARIANT: normal;
+    TEXT-DECORATION: none
+}
+TD.headline
+{
+	FONT-SIZE: 26px;
+	FONT-WEIGHT: HEAVY;
+	COLOR: #940302;
+}
+P.gallery
+{
+	FONT-SIZE=14px;
+}
+TD.main
+{
+	FONT-SIZE=16px;
+}
+TD.menu
+{
+	FONT-SIZE=14px;
+}
+IMG
+{
+	BORDER: FALSE;
+}
+P
+{
+	FONT-SIZE: 13px;
+}
+INPUT {
+	BORDER-RIGHT: #b8bfbc 1px solid;
+	BORDER-TOP: #b8bfbc 1px solid;
+	FONT-SIZE: 12pt;
+	FONT-FAMILY: Arial;
+	BACKGROUND: black;
+	BORDER-LEFT: #b8bfbc 1px solid;
+	COLOR: #ffffff;
+	BORDER-BOTTOM: #b8bfbc 1px solid
+}
+TEXTAREA
+{
+	BORDER-RIGHT: #b8bfbc 1px solid;
+	BORDER-TOP: #b8bfbc 1px solid;
+	FONT-FAMILY: Arial;
+	FONT-SIZE: 12pt;
+	BACKGROUND: black;
+	BORDER-LEFT: #b8bfbc 1px solid;
+	COLOR: #ffffff;
+	BORDER-BOTTOM: #b8bfbc 1px solid
+}
+H1, H2, H3, H4, H5
+{
+	COLOR: #940302;
+}
+P
+{
+	FONT-SIZE=16px;
+}
+TD.title
+{
+	COLOR: #940302;
+	FONT-SIZE: 24px;
+}
+SELECT
+{
+	BORDER-RIGHT: #b8bfbc 1px solid;
+	BORDER-TOP: #b8bfbc 1px solid;
+	FONT-FAMILY: Arial;
+	FONT-SIZE: 12pt;
+	BACKGROUND: black;
+	BORDER-LEFT: #b8bfbc 1px solid;
+	COLOR: #ffffff;
+	BORDER-BOTTOM: #b8bfbc 1px solid
+}
+HR
+{
+	COLOR: #940302; HEIGHT: 1px
+}

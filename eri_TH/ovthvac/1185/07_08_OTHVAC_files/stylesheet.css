@@ -1,0 +1,160 @@
+tr
+	{mso-height-source:auto;}
+col
+	{mso-width-source:auto;}
+br
+	{mso-data-placement:same-cell;}
+.style18
+	{mso-number-format:"_\(\0022$\0022* \#\,\#\#0\.00_\)\;_\(\0022$\0022* \\\(\#\,\#\#0\.00\\\)\;_\(\0022$\0022* \0022-\0022??_\)\;_\(\@_\)";
+	mso-style-name:Currency;
+	mso-style-id:4;}
+.style0
+	{mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	white-space:nowrap;
+	mso-rotate:0;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	border:none;
+	mso-protection:locked visible;
+	mso-style-name:Normal;
+	mso-style-id:0;}
+.font9
+	{color:black;
+	font-size:9.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Tahoma;
+	mso-generic-font-family:auto;
+	mso-font-charset:1;}
+.font10
+	{color:black;
+	font-size:9.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Tahoma;
+	mso-generic-font-family:auto;
+	mso-font-charset:1;}
+td
+	{mso-style-parent:style0;
+	padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:locked visible;
+	white-space:nowrap;
+	mso-rotate:0;}
+.xl24
+	{mso-style-parent:style0;
+	font-size:12.0pt;
+	font-family:"Times New Roman", serif;
+	mso-font-charset:0;
+	text-align:center;}
+.xl25
+	{mso-style-parent:style0;
+	font-size:12.0pt;
+	font-family:"Times New Roman", serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;}
+.xl26
+	{mso-style-parent:style0;
+	font-size:12.0pt;
+	font-family:"Times New Roman", serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;}
+.xl27
+	{mso-style-parent:style0;
+	font-size:12.0pt;
+	font-weight:700;
+	font-family:"Times New Roman", serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;}
+.xl28
+	{mso-style-parent:style0;
+	font-size:12.0pt;
+	font-weight:700;
+	font-family:"Times New Roman", serif;
+	mso-font-charset:0;
+	text-align:center;}
+.xl29
+	{mso-style-parent:style0;
+	font-size:12.0pt;
+	font-weight:700;
+	font-family:"Times New Roman", serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;}
+.xl30
+	{mso-style-parent:style0;
+	font-size:14.0pt;
+	font-weight:700;
+	font-family:"Times New Roman", serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;}
+.xl31
+	{mso-style-parent:style0;
+	text-align:center;}
+.xl32
+	{mso-style-parent:style18;
+	font-size:12.0pt;
+	font-family:"Times New Roman", serif;
+	mso-font-charset:0;
+	mso-number-format:"_\(\0022$\0022* \#\,\#\#0\.00_\)\;_\(\0022$\0022* \\\(\#\,\#\#0\.00\\\)\;_\(\0022$\0022* \0022-\0022??_\)\;_\(\@_\)";
+	text-align:center;}
+.xl33
+	{mso-style-parent:style18;
+	mso-number-format:"_\(\0022$\0022* \#\,\#\#0\.00_\)\;_\(\0022$\0022* \\\(\#\,\#\#0\.00\\\)\;_\(\0022$\0022* \0022-\0022??_\)\;_\(\@_\)";
+	text-align:center;}
+.xl34
+	{mso-style-parent:style18;
+	font-size:12.0pt;
+	font-weight:700;
+	font-family:"Times New Roman", serif;
+	mso-font-charset:0;
+	mso-number-format:"_\(\0022$\0022* \#\,\#\#0\.00_\)\;_\(\0022$\0022* \\\(\#\,\#\#0\.00\\\)\;_\(\0022$\0022* \0022-\0022??_\)\;_\(\@_\)";
+	text-align:center;}
+.xl35
+	{mso-style-parent:style0;
+	font-size:12.0pt;
+	font-weight:700;
+	font-family:"Times New Roman", serif;
+	mso-font-charset:0;
+	text-align:left;}
+.xl36
+	{mso-style-parent:style0;
+	font-size:12.0pt;
+	font-weight:700;
+	text-decoration:underline;
+	text-underline-style:single-accounting;
+	font-family:"Times New Roman", serif;
+	mso-font-charset:0;
+	mso-number-format:"_\(\0022$\0022* \#\,\#\#0\.00_\)\;_\(\0022$\0022* \\\(\#\,\#\#0\.00\\\)\;_\(\0022$\0022* \0022-\0022??_\)\;_\(\@_\)";
+	background:yellow;
+	mso-pattern:auto none;}

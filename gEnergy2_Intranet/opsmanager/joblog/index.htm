@@ -1,0 +1,137 @@
+<%option explicit%>
+<!--METADATA TYPE="typelib" FILE="\Program Files\Common Files\System\ado\msado15.dll"-->
+<%
+dim cnn, rst, strsql
+
+set cnn = server.createobject("ADODB.connection")
+set rst = server.createobject("ADODB.recordset")
+cnn.open application("cnnstr_main")
+
+%>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Job Log</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript1.2">
+function customerdetail(mode) {
+//	company = document.form1.company.value
+	theURL = "cis_update.asp?mode=" + mode
+	openwin(theURL,600,300)
+}
+function opencontact(mode) 
+{
+//	company = document.form1.company.value
+	theURL="updatecontact.asp?mode=" + mode
+	openwin(theURL,500,410)
+}
+function newjob(mode){
+	theURL = "newjob.asp?mode=" + mode
+	openwin(theURL,750,450)
+}
+function openwin(url,mwidth,mheight){
+window.open(url,"","statusbar=no, menubar=no, HEIGHT="+mheight+", WIDTH="+mwidth)
+}
+
+//visual feedback functions for img buttons
+function buttonOver(obj,clr){
+  if (arguments.length == 1) { clr = "#336699"; }
+  obj.style.border = "1px solid " + clr;
+}
+
+function buttonDn(obj,clr){
+  if (arguments.length == 1) { clr = "#000000"; }
+  obj.style.border = "1px solid " + clr;
+}
+
+function buttonOut(obj,clr){
+  if (arguments.length == 1) { clr = "#eeeeee"; }
+  obj.style.border = "1px solid " + clr;
+}
+//-->
+</script>
+<link rel="Stylesheet" href="../../styles.css" type="text/css">		
+</head>
+<body bgcolor="#eeeeee">
+<form name="form1" method="post" action="jobsearch.asp" target="jobwindow">
+<table width="100%" border="0" cellspacing="0" cellpadding="3">
+<tr bgcolor="#6699cc">
+      <td><span class="standardheader">JOB LOG v.2 (part of gEnergyOne I:2)</span></td>
+  <td align="right">
+  <a href="javascript:parent.location='frameset.html';"><img src="/um/opslog/images/btn-job_log_home.gif" style="border:1px solid #336699;" onmouseover="buttonOver(this,'#000000');" onmousedown="buttonDn(this);" onmouseout="buttonOver(this,'#336699');" border="0"></a>
+  <!--[[input type="button" value="New Job" onclick="newjob('new');"]][[input type="button" value="New Customer" onclick="customerdetail('new');"]][[input type="button" value="New Contact" onclick="opencontact('new');"]]-->
+  </td>
+</tr>
+<tr bgcolor="#eeeeee">
+  <td colspan="2" style="border-top:1px solid #ffffff;">
+  <table border="0" cellspacing="3" cellpadding="0">
+  <tr> 
+    <td>
+    <input name="mode" type="hidden" value="search">
+    <input name="search" type="text" value="Insert Search Text" size="30" onClick="javascript:document.form1.search.value=''"> 
+    </td>
+    <td>
+    <select name="status">
+    <option value="">Any status
+    <option value="Unstarted">Unstarted
+    <option value="In progress">In progress
+    <option value="Closed">Closed
+    </select>
+    </td>
+    <td>
+    <select name="status">
+    <option value="">Any job type
+    <%
+    strsql = "SELECT Type,Type_ID FROM master_job_types where job=1 and company='"&company&"' ORDER BY Type"
+    rst.Open strsql, cnn
+    if not rst.eof then
+    do until rst.eof
+    %>
+    <option value="<%=rst("Type_ID")%>"><%=left(rst("Type"),30)%></option>
+    <%
+    end if
+    rst.movenext
+    loop
+    
+    end if
+    rst.close
+    %>
+    </select>
+    </td>
+    <td><input type="submit" name="Submit" value="Search"></td>
+    <td width="12">&nbsp;</td>
+    <td>Order results by:</td>
+    <td>
+    <select name="order">
+    <option value="status" selected>Status
+    <option value="job">Job Number
+    <option value="description">Job Description
+    <option value="address_1">Job Address
+    <option value="pm_last">Project Manager
+    </select>
+    </td>
+<!--
+    [[td]][[input type="radio" name="order" value="status" checked]][[/td]]
+    [[td]]Status[[/td]]
+    [[td]][[input name="order" type="radio" value="job"]][[/td]]
+    [[td]]Job Number[[br]][[/td]]
+    [[td]][[input type="radio" name="order" value="description"]][[/td]]
+    [[td]]Job Description[[br]][[/td]]
+    [[td]][[/td]]
+    [[td]][[input type="radio" name="order" value="address_1"]][[/td]]
+    [[td]]Job Address[[br]][[/td]]
+    [[td]][[input type="radio" name="order" value="pm_last"]][[/td]]
+    [[td]]Project Manager[[/td]]
+-->
+  </tr>
+  </table>
+  </td>
+</tr>
+</table>
+<!--
+[[iframe src="null.htm" name="jobwindow" style="border-top:1px solid #cccccc;" id="mainval" width="100%" height="80%" marginwidth="0" marginheight="0"  border=0 frameborder=0]][[/iframe]]
+-->
+</form>
+		
+</body>
+</html>

@@ -1,0 +1,22 @@
+.OPTION EXPLICIT
+.Set Cabinet=on
+.Set Compress=on
+.Set MaxDiskSize=CDROM
+.Set ReservePerCabinetSize=6144
+.Set DiskDirectoryTemplate=".."
+.Set CompressionType=MSZIP
+.Set CompressionLevel=7
+.Set CompressionMemory=21
+.Set CabinetNameTemplate="weatherreport.CAB"
+"weatherreport.INF"
+"weatherreport.ocx"
+"MSVBVM60.DLL"
+"oleaut32.dll"
+"olepro32.dll"
+"asycfilt.dll"
+"stdole2.tlb"
+"COMCAT.DLL"
+"msado25.tlb"
+"TeeChart5.ocx"
+"MSCAL.OCX"
+"MSSTKPRP.DLL"

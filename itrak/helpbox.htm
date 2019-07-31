@@ -1,0 +1,28 @@
+<div id="helpbox" onclick="innertext = '';style.visibility='hidden';" style="cursor:hand;font-family:arial;font-size:9px; left:90; top:90; width:200; position:absolute; visibility:hidden; background-color:#FFFFCC; border: 1px solid Black; padding: 3px;"></div>
+<script>
+//<!-- 
+
+function closeHelpBox()
+{	document.all['helpbox'].style.visibility = 'hidden';
+}
+function helpbox(item,x,y)
+{	//alert(y);
+  message = messages[item];
+	document.all['helpbox'].innerHTML = message;
+	document.all['helpbox'].style.left = x+5;
+	document.all['helpbox'].style.top = y;
+	document.all['helpbox'].style.visibility = 'visible';
+}
+function helpdrop(helpdiv,item){
+  document.all[(helpdiv + "_img")].src = "images/question-dn.gif";
+  document.all[helpdiv].style.display='block';
+  document.all[helpdiv].innerHTML = messages[item];
+}
+function helpup(helpdiv){
+  document.all[helpdiv].style.display='none';
+  document.all[(helpdiv + "_img")].src = "images/question-rt.gif";
+}
+// -->
+//syntax
+//<a style="cursor:hand;font-family:arial;font-size:12;font-style:bold" onclick="helpbox('Select which the function you want to occur.',event.x,event.y)">?</a>
+</script>

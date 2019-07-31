@@ -1,0 +1,47 @@
+
+BODY {
+	font-size : 8pt;
+	font-family : MS Sans Serif;
+}
+TABLE {
+	font-size : 8pt;
+	font-family : MS Sans Serif;
+}
+LI {
+	font-size : 8pt;
+	font-family : MS Sans Serif;
+}
+A {
+	color : #000000;
+}
+.ColumnTitle {
+	border : 1 outset #ffffff;
+	border-top : 1 solid #ffffff;
+	border-left : 1 solid #ffffff;
+	background-color : menu;
+}
+.TableLine0 {
+	background-color : #ffffff;
+}
+.TableLine1 {
+	background-color : #e9e9e9;
+}
+.Hand {
+	cursor : hand;
+}
+.button {
+	cursor : default;
+	border : 1 solid menu;
+	font-size : 8pt;
+	font-family : MS Sans Serif;
+	padding : 1 5;
+}
+
+.InputSmall {
+	font-family : Arial;
+	font-size : 8pt;
+	height : 17px;
+	line-height : 10px;
+	vertical-align : middle;
+	padding-left : 2px;
+}

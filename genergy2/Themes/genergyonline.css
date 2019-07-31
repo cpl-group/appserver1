@@ -1,0 +1,78 @@
+/***********************************************************************************
+* Genergyonline Stylesheet                                                         *
+* File Name: genergyonline.css                                                     *
+* General Energy Services, Inc., Copyright 2008                                    *
+* The contents of this file may not be copied, duplicated, or redistributed        *
+* in any form without the prior written consent of General Energy Services, Inc.   *
+************************************************************************************/
+
+/***************************************************************************
+** IF YOU ADD STYLES TO THE FILE, MAKE SURE IT DOESN'T ALREADY EXIST,    ***             
+** INTELLESENCE WILL NOT CATCH IT                                        ***
+****************************************************************************/
+
+/*<agl.folder "Body Styles">*/
+body { margin: 0px; scrollbar-face-color: #0099ff; scrollbar-highlight-color: 0099ff; scrollbar-shadow-color: #333333; scrollbar-3dlight-color: #333333; scrollbar-track-color: #333333; scrollbar-darkshadow-color: #333333; }
+#mainContentContainer { width: 100%; height: 100%; margin: 0px; padding: 0px; }
+/*</agl.foldler>*/
+
+/*<agl.folder "Background Images">*/
+.menuBG { background-image: url(../menu_files/bkgd.gif); background-repeat: repeat-y; width: 100px; height: 100%; }
+/*</agl.folder>*/
+
+/*<agl.folder Background Color Sets">*/
+.BGLG { background-color: #eeeeee; } /*Background Color Light Grey*/
+.BGLB { background-color: #6699cc; } /*Background Color Light Blue*/
+.BGWHT { background-color: #FFFFEE; } /*Background Color Medium White*/
+/*</agl.folder>*/
+
+/*<agl.folder "Border Styles">*/
+.bordertopNo { border-top: none; }
+/*</agl.folder>*/
+
+/*<agl.folder "Float Styles">*/
+.fltLeft { float: left; }
+.fltRight { float: right; }
+/*</agl.folder>*/
+
+/*<agl.folder "Font Color Styles">*/
+.txtblk { color: #000000; }
+.txtwht { color: #FFFFFF; }
+.txtbwht { color: #FFFFEE; }
+/*</agl.folder>*/
+
+/*<agl.folder "Heading Styles">*/
+h3 { margin: 0px; padding: 0px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; }
+/*</agl.folder>*/
+
+/*<agl.folder "Fonts and Typefaces">*/
+.txtalncnt { text-align: center; }
+.standard { font-family: Arial, Helvetica, sans-serif; font-size: 10px; }
+/*<.agl.folder>*/
+
+/*<agl.folder "Unfiled Classes">*/
+.bottomline { border-bottom: 1px solid #eeeeee; }
+.floorlink { font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #009ff; }
+a.floorlink:hover { color: #90ee90; }
+.shrunkenheader { font-family: Arial, Helvetica, sans-serif; font-size: 9px; font-weight: bold; }
+ul, li, p { margin: 0px; padding: 0px; }
+.tocSubHeading { margin-left: 10px; }
+/*</agl.folder>*/
+
+/*<agl.folder "Main Menu">*/
+#MainMenuContainer { width: 100px; }
+ul.AccordionContent { margin: 5px; padding: 0px; text-align: left; }
+ul.AccordionContent li { margin: 0px; padding-top: 3px; color: #FFFFFF; font-size: 10px; }
+ul.AccordionContent li a { color: #FFFFFF; text-decoration: none; }
+ul.AccordionContent li a:hover { color: #FFFFEE; text-decoration: underline; }
+/*</agl.folder>*/
+
+/*<agl.folder "User Manual Page">*/
+#manualContainer { width: auto; }
+#manualContentHeader { width: 99.%; height: 20px; border-bottom: 1px solid #000000; padding-top: 5px; padding-left: 5px; padding-right: 10px; }
+#manualContentBody { margin-left: 30px; padding: 0px; float: left; }
+#tocTitle { margin-left: 10px; }
+ul#toc li { list-style-type: none; }
+ul#toc li a { color: #000000; text-decoration: none; }
+ul#toc li a:hover { color: #6699cc; text-decoration: underline; font-weight: bold; }
+/*</agl.folder>*/

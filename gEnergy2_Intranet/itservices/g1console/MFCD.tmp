@@ -1,0 +1,95 @@
+<%@Language="VBScript"%>
+<!--METADATA TYPE="typelib" FILE="\Program Files\Common Files\System\ado\msado15.dll"-->
+<html>
+<head>
+<title>Tenant Selection</title>
+<%
+dim framesrc
+if username<>"" then
+  framesrc = "usrsite.asp?username=" & username
+else
+  framesrc = "null.htm"
+end if
+%>
+<script language="JavaScript" type="text/javascript">
+function fillup(name){
+  document.location="usrdetail.asp?username="+name
+  //document.site.src="usrsite.asp?username="+name
+  alert(document.site.src);
+}
+function loadnav(){
+//	document.site.src = "./g1nav/g1nav.asp?mode=edit" 
+  alert();
+}
+</script>
+
+<script language="JavaScript" type="text/javascript">
+if (screen.width > 1024) {
+  document.write ("<link rel=\"Stylesheet\" href=\"/gEnergy2_Intranet/largestyles.css\" type=\"text/css\">")
+} else {
+  document.write ("<link rel=\"Stylesheet\" href=\"/gEnergy2_Intranet/styles.css\" type=\"text/css\">")
+}
+</script>
+</head>
+
+<body bgcolor="#eeeeee">
+<table border=0 cellpadding="3" cellspacing="0" width="100%">
+<tr bgcolor="#666699">
+  <td><span class="standardheader">Client Administration</span></td>
+</tr>
+</table>
+<form method="post" action="usrmodify.asp">
+  <table border=0 cellpadding="3" cellspacing="0" width="100%">
+    <tr valign="top"> 
+    <tr> 
+      <td align="right"><div align="left">Name</div></td>
+      <td><div align="right"> 
+          <input type="text" name="name2" size="100%">
+        </div></td>
+    </tr>
+    <tr> 
+      <td align="right"><div align="left">Login Username</div></td>
+      <td><div align="right"> 
+          <input type="text" name="user2" size="100%">
+        </div></td>
+    </tr>
+    <tr> 
+      <td align="right"><div align="left">Email Address</div></td>
+      <td><div align="right"> 
+          <input type="text" name="email2" size="100%">
+        </div></td>
+    </tr>
+    <tr> 
+      <td align="right"><div align="left">Company Name</div></td>
+      <td><div align="right"> 
+          <input type="text" name="company" size="100%">
+        </div></td>
+    </tr>
+    <tr> 
+      <td colspan="2"><hr></td>
+    </tr>
+    <tr> 
+      <td colspan="2"><div align="left"> 
+          <input name="g1console" type="hidden" value="http://appserver1.genergy.com/g1_clients/index2.asp">
+          <input name="initpage" type="radio" value="1" checked>
+          gEnergyOne Console 
+          <input type="radio" name="initpage" value="0">
+          Custom Start Page 
+          <input name="custom_page" type="text" value="" size="49">
+        </div></td>
+    </tr>
+    <tr> 
+      <td colspan="2"><input type="submit" name="choice2" value="Save" style="border:1px outset #ddffdd;background-color:ccf3cc;"> 
+        <input type="submit" name="Submit" value="Delete" style="border:1px outset #ddffdd;background-color:ccf3cc;">
+      </td>
+    </tr>
+    <tr> 
+      <td colspan="2"><hr></td>
+    </tr>
+  </table>
+      </table>
+  </form>
+<IFRAME name="site" width="100%" height="400" src="./g1nav/null.htm" scrolling="auto" marginwidth="0" marginheight="0" frameborder=0 border=0></IFRAME> 
+</body>
+
+</html>

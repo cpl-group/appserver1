@@ -1,0 +1,106 @@
+<html>
+<head>
+<title>gEnergyOne - Tenant  Access</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script> 
+function registertenant(){
+var tnum = document.forms[0].tnum.value
+var pwd1 = document.forms[0].passwd1.value
+var pwd2 = document.forms[0].passwd2.value
+if (pwd1=="" || tnum==""){
+	var msg="All Fields are required."
+	alert(msg)
+} else {
+		if (pwd1==pwd2){
+			var temp="register.asp?tnum="+tnum+"&pwd="+pwd1
+			document.location = temp
+		} else {
+			var msg="Passwords do not match. Please re-enter."
+			alert(msg)
+		}
+  }
+}
+
+</script>
+
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" >
+<table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+  <tr>
+    <td valign="middle" align="center"> 
+      <form name="form1" method="post" action="registertenant.asp">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+          <tr> 
+            <td> 
+              <div align="center"><font face="Arial, Helvetica, sans-serif"><img src="login_header%5B1%5D.jpg" width="321" height="40"></font></div>
+            </td>
+          </tr>
+          <tr> 
+            <td> 
+              <div align="center">
+                <table width="76%" border="0" cellspacing="0" cellpadding="0">
+                  <tr> 
+                    <td width="68%" bgcolor="#CCCCCC"><font face="Arial, Helvetica, sans-serif"><b><font color="#FFFFFF"><i>New 
+                      Tenant Registration</i></font></b></font></td>
+                    <td width="32%" bgcolor="#CCCCCC"> 
+                      <div align="right"><font face="Arial, Helvetica, sans-serif"></font></div>
+                    </td>
+                  </tr>
+                  <tr> 
+                    <td width="68%"><font face="Arial, Helvetica, sans-serif">Tenant 
+                      Number <font size="1">(as shown on your bill)</font> :</font></td>
+                    <td width="32%"> 
+                      <div align="right"> 
+                        <input type="text" name="tnum" size="50%">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr> 
+                    <td width="68%"><font face="Arial, Helvetica, sans-serif">Login 
+                      Password</font></td>
+                    <td width="32%"> 
+                      <div align="right"> 
+                        <input type="password" name="passwd1" size="50%">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr> 
+                    <td width="68%"><font face="Arial, Helvetica, sans-serif">Re-enter 
+                      Login Password</font></td>
+                    <td width="32%"> 
+                      <div align="right"> 
+                        <input type="password" name="passwd2" size="50%">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr> 
+                    <td width="68%"> <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=4,0,2,0" width="100" height="22">
+                        <param name=movie value="register.swf">
+                        <param name=quality value=high>
+                        <param name="BGCOLOR" value="">
+                        <embed src="register.swf" quality=high pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="100" height="22" bgcolor="">
+                        </embed> 
+                      </object> </td>
+                    <td width="32%"> 
+                      <div align="right"> </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <tr> 
+            <td> 
+              <div align="center"><font face="Arial, Helvetica, sans-serif"><img src="tenantregistration.jpg" width="321" height="40"></font></div>
+            </td>
+          </tr>
+        </table>
+      </form>
+      <p><i><font face="Arial, Helvetica, sans-serif" size="2"><b>Requirements: 
+        Internet Explorer 5.5 or greater</b></font></i></p>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

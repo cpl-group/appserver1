@@ -1,0 +1,28 @@
+ul, li, body, p, td, input, textarea, select { font-family:Arial,Helvetica,sans-serif; font-size:8pt; }
+.standard { font-family:Arial,Helvetica,sans-serif;font-size:8pt; }
+.standardheader { font-family:Arial,Helvetica,sans-serif;font-size:8pt;font-weight:bold;color:#ffffff; }
+.bottomline { border-bottom:1px solid #eeeeee; }
+.floorlink { font-family:Arial,Helvetica,sans-serif;font-size:8pt; color:#0099ff; }
+a.floorlink:hover { color:lightgreen; }
+.shrunkenheader { font-family:Arial,Helvetica,sans-serif;font-size:7pt;font-weight:bold; }
+a.breadcrumb { font-family:Arial,Helvetica,sans-serif;font-size:8pt; color:#ffffff; }
+a.breadcrumb:hover { color:#ccf3cc; }
+.standardAppHeader { font-family:Arial,Helvetica,sans-serif;font-size:12pt;color:#000000; }
+a { color:#006699; }
+.grayout { color: gray; font-style : italic; }
+body  { margin:0px; }
+
+.tblunderline { border-bottom:1px solid #dddddd; }
+.notetext { color:#990033; }
+.helptext { color:#339933; }
+
+body {
+scrollbar-face-color: #dddddd;
+scrollbar-highlight-color: #ffffff;
+scrollbar-shadow-color: #eeeeee;
+scrollbar-3dlight-color: #999999;
+scrollbar-arrow-color: #000000;
+scrollbar-track-color: #336699;
+scrollbar-darkshadow-color: #333333;
+}
+
